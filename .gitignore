@@ -2,7 +2,7 @@
 .vscode/
 
 # ignore my previous backups
-backups/
+backup/
 
 # ignore planning stuff
 planning/
