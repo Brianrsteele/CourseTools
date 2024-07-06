@@ -1,0 +1,10 @@
+# ignore vscode configs
+.vscode/
+
+# ignore my previous backups
+backups/
+
+# ignore planning stuff
+planning/
+
+__pycache__

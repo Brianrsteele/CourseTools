@@ -1,0 +1,41 @@
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import unittest
+from documentModels.Image import Image
+import tests.TestingUtilities as TestingUtilities
+from rendering.BootStrapImageRenderer import BootStrapImageRenderer
+
+
+class test_image(unittest.TestCase):
+    def setUp(self) -> None:
+        self.test_utils = TestingUtilities
+        self.markdown_input = self.test_utils.read_test_document("single_image.md")
+        self.target_alt_text = (
+            "Water from a fountain spraying in the air in front of ice."
+        )
+        self.target_path = "./_images/depth-blur-1.jpg"
+        self.image = Image(self.markdown_input)
+        self.target_html_ouput = self.test_utils.read_test_document("single_image.html")
+        self.image.set_renderer(BootStrapImageRenderer(self.image))
+
+    def tearDown(self) -> None:
+        del self.test_utils
+
+    def test_parse_alt_text(self) -> None:
+        self.assertEqual(self.image.parse_alt_text(), self.target_alt_text)
+
+    def test_parse_image_path(self) -> None:
+        self.assertEqual(self.image.parse_image_path(), self.target_path)
+
+    def test_set_renderer(self) -> None:
+        self.assertIsNotNone(self.image.render)
+
+    def test_renderer(self) -> None:
+        self.assertEqual(self.image.render(), self.target_html_ouput)
+
+
+if __name__ == "__main__":
+    unittest.main()
