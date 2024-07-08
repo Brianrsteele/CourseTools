@@ -12,9 +12,8 @@ def remove_strong_tags(self, text):
     text = text.replace("</strong>", "")
     return text
 
-    # Read a file to use as test data
 
-
+# Read a file to use as test data
 def read_test_document(document_name):
     test_document = ""
     document_name = "./src/tests/test-documents/" + document_name

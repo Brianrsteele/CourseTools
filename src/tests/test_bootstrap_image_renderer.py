@@ -12,9 +12,11 @@ from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 class test_bootstrap_image_renderer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("single_image.md")
+        self.markdown_input = self.test_utils.read_test_document(
+            "./image/single_image.md"
+        )
         self.target_html_output = self.test_utils.read_test_document(
-            "single_image.html"
+            "./image/single_image.html"
         )
         self.image = Image(self.markdown_input)
         self.image.set_renderer(BootStrapImageRenderer(self.image))

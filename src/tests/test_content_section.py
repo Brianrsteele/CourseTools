@@ -12,13 +12,17 @@ from rendering.BootStrapContentSectionRenderer import BootStrapSectionRenderer
 class test_content_section(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("summary.md")
-        self.content_only_markdown_input = self.test_utils.read_test_document(
-            "content.md"
+        self.markdown_input = self.test_utils.read_test_document(
+            "./content-section/summary.md"
         )
-        self.nobold_markdown_input = self.test_utils.read_test_document("nobold.md")
+        self.content_only_markdown_input = self.test_utils.read_test_document(
+            "./content-section/content.md"
+        )
+        self.nobold_markdown_input = self.test_utils.read_test_document(
+            "./content-section/nobold.md"
+        )
         self.target_html_output = self.test_utils.read_test_document(
-            "bootstrap-summary-render-test.html"
+            "./content-section/bootstrap-summary-render-test.html"
         )
         self.title_only = "Summary"
         self.contentSection = ContentSection(self.markdown_input)

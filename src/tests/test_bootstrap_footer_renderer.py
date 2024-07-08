@@ -12,9 +12,9 @@ from rendering.BootStrapFooterRenderer import BootStrapFooterRenderer
 class test_bootstrap_section_renderer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("footer.md")
+        self.markdown_input = self.test_utils.read_test_document("./footer/footer.md")
         self.target_html_output = self.test_utils.read_test_document(
-            "bootstrap-footer.html"
+            "./footer/bootstrap-footer.html"
         )
         self.footer = DocumentFooter(self.markdown_input)
         self.bootstrap_footer_renderer = self.footer.set_renderer(
@@ -23,7 +23,7 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         # test for a footer with no content ------------
         self.footer_no_content_md = ""
         self.footer_no_content_target_html_output = self.test_utils.read_test_document(
-            "bootstrap-footer-no-content.html"
+            "./footer/bootstrap-footer-no-content.html"
         )
         self.no_content_footer = DocumentFooter(self.footer_no_content_md)
         self.no_content_bootstrap_footer_renderer = self.no_content_footer.set_renderer(

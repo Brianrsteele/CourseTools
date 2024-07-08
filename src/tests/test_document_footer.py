@@ -11,7 +11,7 @@ import tests.TestingUtilities as TestingUtilities
 class test_document_footer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("footer.md")
+        self.markdown_input = self.test_utils.read_test_document("./footer/footer.md")
         self.footer = DocumentFooter(self.markdown_input)
         self.content = "This is some footer content."
         self.has_no_content = DocumentFooter("")

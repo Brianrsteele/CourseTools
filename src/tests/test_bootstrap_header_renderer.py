@@ -12,9 +12,9 @@ from rendering.BootStrapHeaderRenderer import BootStrapHeaderRenderer
 class test_bootstrap_section_renderer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("header.md")
+        self.markdown_input = self.test_utils.read_test_document("./header/header.md")
         self.target_html_output = self.test_utils.read_test_document(
-            "bootstrap-header.html"
+            "./header/bootstrap-header.html"
         )
         self.header = DocumentHeader(self.markdown_input)
         self.bootStrapHeaderRenderer = BootStrapHeaderRenderer(self.header)

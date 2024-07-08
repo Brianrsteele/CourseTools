@@ -12,16 +12,16 @@ from rendering.BootStrapHeaderRenderer import BootStrapHeaderRenderer
 class test_document_header(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("header.md")
+        self.markdown_input = self.test_utils.read_test_document("./header/header.md")
         self.only_title_markdown_input = self.test_utils.read_test_document(
-            "only-title-header.md"
+            "./header/only-title-header.md"
         )
         self.content = "This is a quick note."
         self.author = "Brian Steele"
         self.modfied_date = "3/1/1971"
         self.title = "Depth Blur Project"
         self.target_html_output = self.test_utils.read_test_document(
-            "bootstrap-header.html"
+            "./header/bootstrap-header.html"
         )
 
         self.header = DocumentHeader(self.markdown_input)

@@ -12,13 +12,17 @@ from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 class test_image(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.markdown_input = self.test_utils.read_test_document("single_image.md")
+        self.markdown_input = self.test_utils.read_test_document(
+            "./image/single_image.md"
+        )
         self.target_alt_text = (
             "Water from a fountain spraying in the air in front of ice."
         )
         self.target_path = "./_images/depth-blur-1.jpg"
         self.image = Image(self.markdown_input)
-        self.target_html_ouput = self.test_utils.read_test_document("single_image.html")
+        self.target_html_ouput = self.test_utils.read_test_document(
+            "./image/single_image.html"
+        )
         self.image.set_renderer(BootStrapImageRenderer(self.image))
 
     def tearDown(self) -> None:

@@ -18,21 +18,21 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.test_utils = TestingUtilities
         # test rendering simple content section ----------
         self.markdown_input = self.test_utils.read_test_document(
-            "depth-blur-summary-content.md"
+            "./content-section/depth-blur-summary-content.md"
         )
         self.title_only = "Summary"
         self.target_html_output = self.test_utils.read_test_document(
-            "bootstrap-summary.html"
+            "./content-section/bootstrap-summary.html"
         )
         self.bootstrapRenderer = BootStrapSectionRenderer(
             self.title_only, self.markdown_input
         )
         # test rendering a content section with a table---------
         self.table_content_markdown_input = self.test_utils.read_test_document(
-            "content_section_with_table.md"
+            "./content-section/content_section_with_table.md"
         )
         self.table_content_target_html_output = self.test_utils.read_test_document(
-            "content_section_with_table.html"
+            "./content-section/content_section_with_table.html"
         )
         self.table_content_section = ContentSection(self.table_content_markdown_input)
         self.table_content_section.parse_section_content()

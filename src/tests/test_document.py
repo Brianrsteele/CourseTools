@@ -17,7 +17,7 @@ class test_document_(unittest.TestCase):
         self.test_utils = TestingUtilities
         # open a markdown example file for a single section document ----------------------------------------
         self.markdown_input = self.test_utils.read_test_document(
-            "one-section-project.md"
+            "./document/one-section-project.md"
         )
         # create a document to test
         self.document = Document(self.markdown_input)
@@ -63,18 +63,18 @@ class test_document_(unittest.TestCase):
         self.document2 = Document(self.markdown_input)
         # import the html output to test render()
         self.one_section_bootstrap_output = self.test_utils.read_test_document(
-            "one-section-project.html"
+            "./document/one-section-project.html"
         )
 
         # open a markdown document for a three section document ------------------------
         self.three_section_raw_content = self.test_utils.read_test_document(
-            "three-section-project.md"
+            "./document/three-section-project.md"
         )
         # create a three section document to test
         self.three_section_document = Document(self.three_section_raw_content)
         # open target html to test for three section document
         self.three_section_target = self.test_utils.read_test_document(
-            "three-section-project.html"
+            "./document/three-section-project.html"
         )
 
     def tearDown(self) -> None:
