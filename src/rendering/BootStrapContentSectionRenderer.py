@@ -6,6 +6,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from rendering.ABCSectionRenderer import ABCSectionRenderer
 import markdown
 import re
+from documentModels.Image import Image
+from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 
 
 class BootStrapSectionRenderer(ABCSectionRenderer):
@@ -14,6 +16,7 @@ class BootStrapSectionRenderer(ABCSectionRenderer):
         self.content = content.strip()
 
     def render_section(self):
+        self.parse_single_images_without_captions()
         return_bootstrap = ""
         id = self.title
         id = id.replace(" ", "_")
@@ -46,3 +49,11 @@ class BootStrapSectionRenderer(ABCSectionRenderer):
     def make_tables_pretty(self, text):
         text = re.sub("(<table)", '<table class="table table-striped"', text)
         return text
+
+    def parse_single_images_without_captions(self):
+        images = re.findall("!\[.*\]\(.*\)", self.content)
+        for image in images:
+            replacement_image = Image(image)
+            replacement_image.set_renderer(BootStrapImageRenderer(replacement_image))
+            replacement_image_tag = replacement_image.render()
+            self.content = self.content.replace(image, replacement_image_tag)

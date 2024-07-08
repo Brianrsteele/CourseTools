@@ -14,7 +14,7 @@ class Image(ABCImage):
     """
 
     def __init__(self, content):
-        self.raw_content = content
+        self.markdown_content = content
         self.path = self.parse_image_path()
         self.alt_text = self.parse_alt_text()
         self.renderer = None
@@ -27,7 +27,9 @@ class Image(ABCImage):
         Find the path to the image file in the raw markdown
         """
         path = ""
-        path = self.raw_content.split("](")[1][:-2]
+        path = self.markdown_content.split("](")[1]
+        path = path.strip()
+        path = path[:-1]
         return path
 
     # ![Water from a fountain spraying in the air in front of ice.](./_images/depth-blur-1.jpg)
@@ -37,7 +39,7 @@ class Image(ABCImage):
         Find the alt tag text for the image in the raw markdown
         """
         alt_text = ""
-        alt_text = self.raw_content.split("](")[0][2:]
+        alt_text = self.markdown_content.split("](")[0][2:]
         return alt_text
 
     def set_renderer(self, renderer):

@@ -13,7 +13,7 @@ class ContentSection(ABCSection):
     """
 
     def __init__(self, content):
-        self.raw_content = content
+        self.bootstrap_content = content
         self.title = self.parse_section_title()
         self.content = self.parse_section_content()
         self.renderer = None
@@ -25,7 +25,7 @@ class ContentSection(ABCSection):
         """
         Find the title of the section in the raw markdown
         """
-        title = self.raw_content.split("\n")[0]
+        title = self.bootstrap_content.split("\n")[0]
         title = title.replace("##", "")
         title = title.strip()
         return title
@@ -34,7 +34,7 @@ class ContentSection(ABCSection):
         """
         Find the content of the section in the raw markdown
         """
-        content = self.raw_content.split("\n")[2:]
+        content = self.bootstrap_content.split("\n")[2:]
         content = "\n".join(content)
         content = content.strip()
         return content
