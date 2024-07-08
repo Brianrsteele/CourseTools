@@ -16,49 +16,51 @@ class test_document_(unittest.TestCase):
         # add some useful utilities
         self.test_utils = TestingUtilities
         # open a markdown example file for a single section document ----------------------------------------
-        self.raw_content = self.test_utils.read_test_document("one-section-project.md")
+        self.markdown_input = self.test_utils.read_test_document(
+            "one-section-project.md"
+        )
         # create a document to test
-        self.document = Document(self.raw_content)
+        self.document = Document(self.markdown_input)
         # create fake header markdown to test against.
-        self.header_markdown = "# Depth Blur Project\n\nAuthor: Brian Steele\nModified Date: 3/1/1971\n\nThis is some header content."
-        self.test_header = DocumentHeader(self.header_markdown)
+        self.header_markdown_input = "# Depth Blur Project\n\nAuthor: Brian Steele\nModified Date: 3/1/1971\n\nThis is some header content."
+        self.documentHeader = DocumentHeader(self.header_markdown_input)
         # create fake footer markdown to test against.
-        self.footer_markdown = "This is some footer content."
-        self.test_footer = DocumentFooter(self.footer_markdown)
+        self.footer_markdown_input = "This is some footer content."
+        self.documentFooter = DocumentFooter(self.footer_markdown_input)
         # create fake markdown content to test.
-        self.single_summary_section_string = "Summary\n\n"
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input = "Summary\n\n"
+        self.single_summary_section_markdown_input += (
             "Turn in four (4) images in the JPEG file format and a link "
         )
-        self.single_summary_section_string += "to a Lightroom album with one hundred (100) images taken for this project.\n\n"
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += "to a Lightroom album with one hundred (100) images taken for this project.\n\n"
+        self.single_summary_section_markdown_input += (
             "- You can photograph anything you want.\n"
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "- One (1) image should demonstrate **fozen motion**.\n"
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "- One (1) image should demonstrate **blurred motion**.\n"
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "- One (1) image should demonstrate **large depth of field**.\n"
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "- One (1) image should demonstrate **shallow depth of field**.\n"
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "- We will look at the images you submit in this week's "
         )
-        self.single_summary_section_string += (
+        self.single_summary_section_markdown_input += (
             "discussion for online students and in class for in-person students."
         )
         # create a list of ContentSection objects
         self.single_summary_section_list = []
-        content_section = ContentSection(self.single_summary_section_string)
+        content_section = ContentSection(self.single_summary_section_markdown_input)
         self.single_summary_section_list.append(content_section)
-        self.document.append_section(self.single_summary_section_string)
+        self.document.append_section(self.single_summary_section_markdown_input)
         # need a new document to test parse_document
-        self.document2 = Document(self.raw_content)
+        self.document2 = Document(self.markdown_input)
         # import the html output to test render()
         self.one_section_bootstrap_output = self.test_utils.read_test_document(
             "one-section-project.html"
@@ -77,13 +79,13 @@ class test_document_(unittest.TestCase):
 
     def tearDown(self) -> None:
         del self.test_utils
-        del self.raw_content
+        del self.markdown_input
         del self.document
-        del self.header_markdown
-        del self.footer_markdown
-        del self.test_header
-        del self.test_footer
-        del self.single_summary_section_string
+        del self.header_markdown_input
+        del self.footer_markdown_input
+        del self.documentHeader
+        del self.documentFooter
+        del self.single_summary_section_markdown_input
         del self.single_summary_section_list
         del self.document2
         del self.one_section_bootstrap_output
@@ -93,15 +95,14 @@ class test_document_(unittest.TestCase):
 
     def test_parse_document(self) -> None:
         self.document2.parse_document()
-        print(self.document.header)
         self.assertIsNot("", self.document2.header)
-        self.assertEqual(self.document2.header.title, self.test_header.title)
-        self.assertEqual(self.document2.header.content, self.test_header.content)
-        self.assertEqual(self.document2.header.author, self.test_header.author)
+        self.assertEqual(self.document2.header.title, self.documentHeader.title)
+        self.assertEqual(self.document2.header.content, self.documentHeader.content)
+        self.assertEqual(self.document2.header.author, self.documentHeader.author)
         self.assertEqual(
-            self.document2.header.modified_date, self.test_header.modified_date
+            self.document2.header.modified_date, self.documentHeader.modified_date
         )
-        self.assertEqual(self.document2.footer.content, self.test_footer.content)
+        self.assertEqual(self.document2.footer.content, self.documentFooter.content)
         self.assertEqual(
             str(self.document2.sections[0]),
             str(self.single_summary_section_list[0]),
@@ -110,33 +111,33 @@ class test_document_(unittest.TestCase):
     def test_parse_all_sections(self) -> None:
         self.assertEqual(
             self.document.parse_all_sections_text()[0],
-            self.single_summary_section_string,
+            self.single_summary_section_markdown_input,
         )
 
     def test_add_header(self) -> None:
         self.document.add_header()
-        self.assertEqual(self.document.header.title, self.test_header.title)
-        self.assertEqual(self.document.header.author, self.test_header.author)
+        self.assertEqual(self.document.header.title, self.documentHeader.title)
+        self.assertEqual(self.document.header.author, self.documentHeader.author)
         self.assertEqual(
-            self.document.header.modified_date, self.test_header.modified_date
+            self.document.header.modified_date, self.documentHeader.modified_date
         )
-        self.assertEqual(self.document.header.content, self.test_header.content)
-        self.assertEqual(str(self.document.header), str(self.test_header))
+        self.assertEqual(self.document.header.content, self.documentHeader.content)
+        self.assertEqual(str(self.document.header), str(self.documentHeader))
 
     def test_parse_header(self) -> None:
         # uses the self.raw_content markdown text to find and return
         # the markdown content to create a header.
-        self.assertEqual(self.document.parse_header(), self.header_markdown)
+        self.assertEqual(self.document.parse_header(), self.header_markdown_input)
 
     def test_add_footer(self) -> None:
         self.document.add_footer()
-        self.assertEqual(self.document.footer.content, self.test_footer.content)
-        self.assertEqual(str(self.document.footer), str(self.test_footer))
+        self.assertEqual(self.document.footer.content, self.documentFooter.content)
+        self.assertEqual(str(self.document.footer), str(self.documentFooter))
 
     def test_parse_footer(self) -> None:
         # uses the self.raw_content markdown text to find and return
         # the markdown content to create a footer.
-        self.assertEqual(self.document.parse_footer(), self.footer_markdown)
+        self.assertEqual(self.document.parse_footer(), self.footer_markdown_input)
 
     def test_append_section(self):
         self.assertEqual(

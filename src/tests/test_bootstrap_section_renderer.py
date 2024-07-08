@@ -17,21 +17,24 @@ class test_bootstrap_section_renderer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
         # test rendering simple content section ----------
-        self.content = self.test_utils.read_test_document(
+        self.markdown_input = self.test_utils.read_test_document(
             "depth-blur-summary-content.md"
         )
-        self.title = "Summary"
-        self.output = self.test_utils.read_test_document("bootstrap-summary.html")
-        self.bootstrapRenderer = BootStrapSectionRenderer(self.title, self.content)
-
+        self.title_only = "Summary"
+        self.target_html_output = self.test_utils.read_test_document(
+            "bootstrap-summary.html"
+        )
+        self.bootstrapRenderer = BootStrapSectionRenderer(
+            self.title_only, self.markdown_input
+        )
         # test rendering a content section with a table---------
-        self.table_content_markdown = self.test_utils.read_test_document(
+        self.table_content_markdown_input = self.test_utils.read_test_document(
             "content_section_with_table.md"
         )
-        self.table_content_target_output = self.test_utils.read_test_document(
+        self.table_content_target_html_output = self.test_utils.read_test_document(
             "content_section_with_table.html"
         )
-        self.table_content_section = ContentSection(self.table_content_markdown)
+        self.table_content_section = ContentSection(self.table_content_markdown_input)
         self.table_content_section.parse_section_content()
         self.table_content_section.parse_section_title()
         self.table_content_section.set_renderer(
@@ -41,7 +44,14 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         )
 
     def tearDown(self) -> None:
+        del self.test_utils
+        del self.markdown_input
+        del self.title_only
+        del self.target_html_output
         del self.bootstrapRenderer
+        del self.table_content_markdown_input
+        del self.table_content_target_html_output
+        del self.table_content_section
 
     def test_render_section(self) -> None:
         # test rendering simple content section ----------------------------
@@ -50,7 +60,7 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         bootstrap_section = self.test_utils.clean_text(bootstrap_section)
 
         # need to do some formatting to the test text
-        target_output = self.output
+        target_output = self.target_html_output
         target_output = self.test_utils.clean_text(target_output)
 
         self.assertEqual(bootstrap_section, target_output)
@@ -58,7 +68,7 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         # test rendering content section with a table -----------------------
         bootstrap_table_output = self.table_content_section.renderer.render_section()
         bootstrap_table_output = self.test_utils.clean_text(bootstrap_table_output)
-        target_table_output = self.table_content_target_output
+        target_table_output = self.table_content_target_html_output
         target_table_output = self.test_utils.clean_text(target_table_output)
 
         self.test_utils.print_diff(bootstrap_table_output, target_table_output)

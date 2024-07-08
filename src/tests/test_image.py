@@ -23,6 +23,11 @@ class test_image(unittest.TestCase):
 
     def tearDown(self) -> None:
         del self.test_utils
+        del self.markdown_input
+        del self.target_alt_text
+        del self.target_path
+        del self.image
+        del self.target_html_ouput
 
     def test_parse_alt_text(self) -> None:
         self.assertEqual(self.image.parse_alt_text(), self.target_alt_text)

@@ -11,16 +11,17 @@ import tests.TestingUtilities as TestingUtilities
 class test_document_footer(unittest.TestCase):
     def setUp(self) -> None:
         self.test_utils = TestingUtilities
-        self.raw_content = self.test_utils.read_test_document("footer.md")
-        self.footer = DocumentFooter(self.raw_content)
+        self.markdown_input = self.test_utils.read_test_document("footer.md")
+        self.footer = DocumentFooter(self.markdown_input)
         self.content = "This is some footer content."
         self.has_no_content = DocumentFooter("")
 
     def tearDown(self) -> None:
         del self.test_utils
-        del self.raw_content
+        del self.markdown_input
         del self.footer
         del self.content
+        del self.has_no_content
 
     def test_parse_footer_content(self) -> None:
         self.assertEqual(self.footer.parse_footer_content(), self.content)
