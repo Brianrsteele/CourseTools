@@ -3,10 +3,10 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from documentModels.ABCFooter import ABCFooter
+from documentModels.ABCDocumentModel import ABCDocumentModel
 
 
-class DocumentFooter(ABCFooter):
+class DocumentFooter(ABCDocumentModel):
     """
     Represents the very last section markdown text in a document.
     Also potentially contains some content for the end of the document.
@@ -14,11 +14,14 @@ class DocumentFooter(ABCFooter):
 
     def __init__(self, content):
         self.raw_content = content
-        self.content = self.parse_footer_content()
+        self.parse()
         self.renderer = None
 
     def __str__(self):
         return f"Footer: {self.content}"
+
+    def parse(self):
+        self.content = self.parse_footer_content()
 
     # find the footer content in the raw content
     def parse_footer_content(self):
@@ -35,4 +38,4 @@ class DocumentFooter(ABCFooter):
 
     # render the footer contents
     def render(self):
-        return self.renderer.render_footer()
+        return self.renderer.render()

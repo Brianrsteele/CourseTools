@@ -4,10 +4,10 @@ sys.path.append(
     "/Users/briansteele/Library/CloudStorage/OneDrive-MNSCU/Development/CourseTools"
 )
 
-from documentModels.ABCImage import ABCImage
+from documentModels.ABCDocumentModel import ABCDocumentModel
 
 
-class Image(ABCImage):
+class Image(ABCDocumentModel):
     """
     Represents an image with a file path to an image file and
     alt text describing the image.
@@ -15,12 +15,15 @@ class Image(ABCImage):
 
     def __init__(self, content):
         self.markdown_content = content
-        self.path = self.parse_image_path()
-        self.alt_text = self.parse_alt_text()
+        self.parse()
         self.renderer = None
 
     def __str__(self):
         return f"Image: {self.path}, {self.alt_text}"
+
+    def parse(self):
+        self.path = self.parse_image_path()
+        self.alt_text = self.parse_alt_text()
 
     def parse_image_path(self):
         """
@@ -46,4 +49,4 @@ class Image(ABCImage):
         self.renderer = renderer
 
     def render(self):
-        return self.renderer.render_image()
+        return self.renderer.render()

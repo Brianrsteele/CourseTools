@@ -3,11 +3,11 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from rendering.ABCHeaderRenderer import ABCHeaderRenderer
+from rendering.ABCRenderer import ABCRenderer
 import markdown
 
 
-class BootStrapHeaderRenderer(ABCHeaderRenderer):
+class BootStrapHeaderRenderer(ABCRenderer):
     def __init__(self, header):
         self.header = header
         self.header_render_content = ""
@@ -16,7 +16,7 @@ class BootStrapHeaderRenderer(ABCHeaderRenderer):
         self.modified_date = header.modified_date
         self.author = header.author
 
-    def render_header(self):
+    def render(self):
         header_render_content = ""
         header_render_content += "<!doctype html>\n"
         header_render_content += '<html lang="en">'

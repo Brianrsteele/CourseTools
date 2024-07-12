@@ -3,10 +3,10 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from documentModels.ABCSection import ABCSection
+from documentModels.ABCDocumentModel import ABCDocumentModel
 
 
-class ContentSection(ABCSection):
+class ContentSection(ABCDocumentModel):
     """
     Represents a section of markdown text from an assignment that has a title, intro
     paragraph and then a bullet pointed list of instructions
@@ -14,12 +14,15 @@ class ContentSection(ABCSection):
 
     def __init__(self, content):
         self.bootstrap_content = content
-        self.title = self.parse_section_title()
-        self.content = self.parse_section_content()
+        self.parse()
         self.renderer = None
 
     def __str__(self):
         return f"ContentSection: {self.title}, {self.content}"
+
+    def parse(self):
+        self.title = self.parse_section_title()
+        self.content = self.parse_section_content()
 
     def parse_section_title(self):
         """
@@ -50,4 +53,4 @@ class ContentSection(ABCSection):
         self.renderer = renderer
 
     def render(self):
-        return self.renderer.render_section()
+        return self.renderer.render()

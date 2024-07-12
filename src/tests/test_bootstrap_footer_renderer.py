@@ -41,16 +41,16 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         del self.no_content_footer
         del self.no_content_bootstrap_footer_renderer
 
-    def test_render_footer(self) -> None:
+    def test_render(self) -> None:
         # test regular footer with content ------------------------
-        footer_output = self.footer.renderer.render_footer()
+        footer_output = self.footer.renderer.render()
         target_output = self.target_html_output
         footer_output = self.test_utils.clean_text(footer_output)
         target_output = self.test_utils.clean_text(target_output)
         self.assertEqual(footer_output, target_output)
 
         # test a footer with no content
-        no_content_footer_output = self.no_content_footer.renderer.render_footer()
+        no_content_footer_output = self.no_content_footer.renderer.render()
         no_content_target_ouput = self.footer_no_content_target_html_output
         no_content_footer_output = self.test_utils.clean_text(no_content_footer_output)
         no_content_target_ouput = self.test_utils.clean_text(no_content_target_ouput)

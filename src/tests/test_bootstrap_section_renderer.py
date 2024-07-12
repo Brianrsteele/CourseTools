@@ -73,10 +73,10 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         del self.table_content_target_html_output
         del self.table_content_section
 
-    def test_render_section(self) -> None:
+    def test_render(self) -> None:
         # test rendering simple content section ----------------------------
         # need to do some formatting to the rendered text
-        bootstrap_section = self.bootstrapRenderer.render_section()
+        bootstrap_section = self.bootstrapRenderer.render()
         bootstrap_section = self.test_utils.clean_text(bootstrap_section)
 
         # need to do some formatting to the test text
@@ -86,14 +86,14 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.assertEqual(bootstrap_section, target_output)
 
     def test_render_content_section_with_table(self) -> None:
-        bootstrap_table_output = self.table_content_section.renderer.render_section()
+        bootstrap_table_output = self.table_content_section.renderer.render()
         bootstrap_table_output = self.test_utils.clean_text(bootstrap_table_output)
         target_table_output = self.table_content_target_html_output
         target_table_output = self.test_utils.clean_text(target_table_output)
 
         self.assertEqual(bootstrap_table_output, target_table_output)
 
-    def test_render_section_with_single_image_no_captions(self) -> None:
+    def test_render_with_single_image_no_captions(self) -> None:
         input = self.single_image_content_section.render()
         output = self.single_image_section_target_html_output
         input = self.test_utils.clean_text(input)

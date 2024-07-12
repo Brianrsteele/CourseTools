@@ -3,10 +3,10 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from documentModels.ABCHeader import ABCHeader
+from documentModels.ABCDocumentModel import ABCDocumentModel
 
 
-class DocumentHeader(ABCHeader):
+class DocumentHeader(ABCDocumentModel):
     """
     Represents the very first section markdown text in a document.
     Also potentially contains an author name and modified date
@@ -15,16 +15,19 @@ class DocumentHeader(ABCHeader):
 
     def __init__(self, content):
         self.raw_content = content
-        self.title = self.parse_header_title()
-        self.content = self.parse_header_content()
-        self.author = self.parse_author()
-        self.modified_date = self.parse_modified_date()
+        self.parse()
         self.renderer = None
 
     def __str__(self):
         return (
             f"Header: {self.title}, {self.author}, {self.modified_date}, {self.content}"
         )
+
+    def parse(self):
+        self.title = self.parse_header_title()
+        self.content = self.parse_header_content()
+        self.author = self.parse_author()
+        self.modified_date = self.parse_modified_date()
 
     # find the header title in the raw content
     def parse_header_title(self):
@@ -77,4 +80,4 @@ class DocumentHeader(ABCHeader):
 
     # render the content of the header using the assigned renderer
     def render(self):
-        return self.renderer.render_header()
+        return self.renderer.render()

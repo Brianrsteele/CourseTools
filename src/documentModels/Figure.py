@@ -4,24 +4,27 @@ sys.path.append(
     "/Users/briansteele/Library/CloudStorage/OneDrive-MNSCU/Development/CourseTools"
 )
 
-from documentModels.ABCFigure import ABCFigure
+from documentModels.ABCDocumentModel import ABCDocumentModel
 from documentModels.Image import Image
 
 
-class Figure(ABCFigure):
+class Figure(ABCDocumentModel):
     """
     Represents a figure with an Image object and its title, caption, and related text.
     """
 
     def __init__(self, content):
         self.markdown_content = content
-        self.image = self.parse_image()
-        self.caption = self.parse_caption()
-        self.text = self.parse_text()
+        self.parse()
         self.renderer = None
 
     def __str__(self):
         return None
+
+    def parse(self):
+        self.image = self.parse_image()
+        self.caption = self.parse_caption()
+        self.text = self.parse_text()
 
     def parse_image(self):
         """

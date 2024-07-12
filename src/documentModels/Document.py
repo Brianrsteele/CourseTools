@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from documentModels.ABCDocument import ABCDocument
+from documentModels.ABCDocumentModel import ABCDocumentModel
 from documentModels.DocumentHeader import DocumentHeader
 from documentModels.DocumentFooter import DocumentFooter
 from documentModels.ContentSection import ContentSection
@@ -12,7 +12,7 @@ from rendering.BootStrapFooterRenderer import BootStrapFooterRenderer
 from rendering.BootStrapContentSectionRenderer import BootStrapSectionRenderer
 
 
-class Document(ABCDocument):
+class Document(ABCDocumentModel):
     """
     Represents writing for a class assignment, FAQ, syllabus, or other material
     that is written in markdown and then converted to other formats, like HTML
@@ -26,6 +26,7 @@ class Document(ABCDocument):
         self.header = None
         self.footer = None
         self.sections = []
+        self.parse()
 
     def __str__(self):
         return_string = ""
@@ -36,7 +37,7 @@ class Document(ABCDocument):
         return_string += f"{self.footer}"
         return return_string
 
-    def parse_document(self):
+    def parse(self):
         self.add_header()
         self.add_footer()
         my_sections = self.parse_all_sections_text()
@@ -84,7 +85,10 @@ class Document(ABCDocument):
         all_sections = all_sections[1:-1]
         return all_sections
 
-    def render_document(self, type):
+    def set_renderer(self, renderer):
+        pass
+
+    def render(self, type):
         # when this method is completed, it should return a string with the
         # html, docx, or other information needed to save as a file of the
         # requested type.

@@ -3,19 +3,19 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from rendering.ABCSectionRenderer import ABCSectionRenderer
+from rendering.ABCRenderer import ABCRenderer
 import markdown
 import re
 from documentModels.Image import Image
 from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 
 
-class BootStrapSectionRenderer(ABCSectionRenderer):
+class BootStrapSectionRenderer(ABCRenderer):
     def __init__(self, title, content):
         self.title = title.strip()
         self.content = content.strip()
 
-    def render_section(self):
+    def render(self):
         self.parse_single_images_without_captions()
         return_bootstrap = ""
         id = self.title

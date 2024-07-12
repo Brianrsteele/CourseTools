@@ -22,8 +22,8 @@ class test_bootstrap_section_renderer(unittest.TestCase):
     def tearDown(self) -> None:
         del self.bootStrapHeaderRenderer
 
-    def test_render_header(self) -> None:
-        self.bootstrap_header = self.bootStrapHeaderRenderer.render_header()
+    def test_render(self) -> None:
+        self.bootstrap_header = self.bootStrapHeaderRenderer.render()
         self.assertEqual(self.bootstrap_header, self.target_html_output)
 
 

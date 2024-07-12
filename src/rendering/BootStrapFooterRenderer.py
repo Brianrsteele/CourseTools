@@ -3,22 +3,19 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from rendering.ABCFooterRenderer import ABCFooterRenderer
+from rendering.ABCRenderer import ABCRenderer
 import markdown
 
 
-class BootStrapFooterRenderer(ABCFooterRenderer):
+class BootStrapFooterRenderer(ABCRenderer):
     def __init__(self, footer):
         self.footer = footer
-
         if self.footer.content is not None:
             self.content = markdown.markdown(footer.content)
             self.content = self.content.strip()
-
         self.footer_content = ""
-        self.render = None
 
-    def render_footer(self):
+    def render(self):
         if self.footer.content is not None:
             self.footer_content += "        " + self.content + "\n"
         self.footer_content += "    </div>\n"

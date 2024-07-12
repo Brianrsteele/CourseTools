@@ -27,8 +27,8 @@ class test_bootstrap_image_renderer(unittest.TestCase):
         del self.target_html_output
         del self.image
 
-    def test_render_image(self) -> None:
-        input = self.image.renderer.render_image()
+    def test_render(self) -> None:
+        input = self.image.renderer.render()
         output = self.target_html_output
 
         self.assertEqual(input, output)

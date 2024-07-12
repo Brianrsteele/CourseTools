@@ -94,7 +94,6 @@ class test_document_(unittest.TestCase):
         del self.three_section_target
 
     def test_parse_document(self) -> None:
-        self.document2.parse_document()
         self.assertIsNot("", self.document2.header)
         self.assertEqual(self.document2.header.title, self.documentHeader.title)
         self.assertEqual(self.document2.header.content, self.documentHeader.content)
@@ -154,8 +153,7 @@ class test_document_(unittest.TestCase):
 
     def test_render_document(self):
         # test one section document
-        self.document2.parse_document()
-        output = self.document2.render_document("bootstrap")
+        output = self.document2.render("bootstrap")
         target_output = self.one_section_bootstrap_output
         output = self.test_utils.clean_text(output)
         target_output = self.test_utils.clean_text(target_output)
@@ -165,8 +163,7 @@ class test_document_(unittest.TestCase):
         )
 
         # test three section document -----------------------------------------------------
-        self.three_section_document.parse_document()
-        three_section_output = self.three_section_document.render_document("bootstrap")
+        three_section_output = self.three_section_document.render("bootstrap")
         three_section_target_output = self.three_section_target
         three_section_output = self.test_utils.clean_text(three_section_output)
         three_section_target_output = self.test_utils.clean_text(
