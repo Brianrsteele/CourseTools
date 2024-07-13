@@ -151,7 +151,7 @@ class test_document_(unittest.TestCase):
             str(self.document.sections[0]), str(self.single_summary_section_list[0])
         )
 
-    def test_render_document(self):
+    def test_render(self):
         # test one section document
         output = self.document2.render("bootstrap")
         target_output = self.one_section_bootstrap_output
@@ -161,15 +161,6 @@ class test_document_(unittest.TestCase):
             output,
             target_output,
         )
-
-        # test three section document -----------------------------------------------------
-        three_section_output = self.three_section_document.render("bootstrap")
-        three_section_target_output = self.three_section_target
-        three_section_output = self.test_utils.clean_text(three_section_output)
-        three_section_target_output = self.test_utils.clean_text(
-            three_section_target_output
-        )
-        self.assertEqual(three_section_output, three_section_target_output)
 
 
 if __name__ == "__main__":

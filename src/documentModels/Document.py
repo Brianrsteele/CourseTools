@@ -7,9 +7,7 @@ from documentModels.ABCDocumentModel import ABCDocumentModel
 from documentModels.DocumentHeader import DocumentHeader
 from documentModels.DocumentFooter import DocumentFooter
 from documentModels.ContentSection import ContentSection
-from rendering.BootStrapHeaderRenderer import BootStrapHeaderRenderer
-from rendering.BootStrapFooterRenderer import BootStrapFooterRenderer
-from rendering.BootStrapContentSectionRenderer import BootStrapSectionRenderer
+from rendering.BootStrapDocumentRenderer import BootStrapDocumentRenderer
 
 
 class Document(ABCDocumentModel):
@@ -26,6 +24,7 @@ class Document(ABCDocumentModel):
         self.header = None
         self.footer = None
         self.sections = []
+        self.renderer = None
         self.parse()
 
     def __str__(self):
@@ -86,25 +85,13 @@ class Document(ABCDocumentModel):
         return all_sections
 
     def set_renderer(self, renderer):
-        pass
+        self.renderer = renderer
 
     def render(self, type):
         # when this method is completed, it should return a string with the
         # html, docx, or other information needed to save as a file of the
         # requested type.
-        rendered_document_string = ""
         type = type.upper()
         if type == "BOOTSTRAP":
-            self.header.set_renderer(BootStrapHeaderRenderer(self.header))
-            self.footer.set_renderer(BootStrapFooterRenderer(self.footer))
-            rendered_document_string += self.header.render()
-            rendered_document_string += "\n"
-            for section in self.sections:
-                section.set_renderer(
-                    BootStrapSectionRenderer(section.title, section.content)
-                )
-                rendered_document_string += section.render()
-            rendered_document_string += "\n"
-            rendered_document_string += self.footer.render()
-
-        return rendered_document_string
+            self.set_renderer(BootStrapDocumentRenderer(self))
+        return self.renderer.render(self)
