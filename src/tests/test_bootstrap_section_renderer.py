@@ -20,13 +20,11 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.markdown_input = self.test_utils.read_test_document(
             "./content-section/depth-blur-summary-content.md"
         )
-        self.title_only = "Summary"
+        self.markdown_content_section = ContentSection(self.markdown_input)
         self.target_html_output = self.test_utils.read_test_document(
             "./content-section/bootstrap-summary.html"
         )
-        self.bootstrapRenderer = BootStrapSectionRenderer(
-            self.title_only, self.markdown_input
-        )
+        self.bootstrapRenderer = BootStrapSectionRenderer(self.markdown_content_section)
 
         # test rendering a content section with a table---------
         self.table_content_markdown_input = self.test_utils.read_test_document(
@@ -39,9 +37,7 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.table_content_section.parse_section_content()
         self.table_content_section.parse_section_title()
         self.table_content_section.set_renderer(
-            BootStrapSectionRenderer(
-                self.table_content_section.title, self.table_content_section.content
-            )
+            BootStrapSectionRenderer(self.table_content_section)
         )
 
         # test rendering a content section with images with no captions ---------------
@@ -57,16 +53,12 @@ class test_bootstrap_section_renderer(unittest.TestCase):
             self.single_image_section_markdown_input
         )
         self.single_image_content_section.set_renderer(
-            BootStrapSectionRenderer(
-                self.single_image_content_section.title,
-                self.single_image_content_section.content,
-            )
+            BootStrapSectionRenderer(self.single_image_content_section)
         )
 
     def tearDown(self) -> None:
         del self.test_utils
         del self.markdown_input
-        del self.title_only
         del self.target_html_output
         del self.bootstrapRenderer
         del self.table_content_markdown_input

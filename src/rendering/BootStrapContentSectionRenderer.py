@@ -11,9 +11,9 @@ from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 
 
 class BootStrapSectionRenderer(ABCRenderer):
-    def __init__(self, title, content):
-        self.title = title.strip()
-        self.content = content.strip()
+    def __init__(self, content_section):
+        self.title = content_section.title.strip()
+        self.content = content_section.content.strip()
 
     def render(self):
         self.parse_single_images_without_captions()

@@ -52,20 +52,12 @@ class test_content_section(unittest.TestCase):
         )
 
     def test_set_renderer(self) -> None:
-        self.contentSection.set_renderer(
-            BootStrapSectionRenderer(
-                self.contentSection.title, self.contentSection.content
-            )
-        )
+        self.contentSection.set_renderer(BootStrapSectionRenderer(self.contentSection))
         self.assertIsNotNone(self.contentSection.renderer)
 
     def test_render(self) -> None:
         # self.contentSection.remove_bold()
-        self.contentSection.set_renderer(
-            BootStrapSectionRenderer(
-                self.contentSection.title, self.contentSection.content
-            )
-        )
+        self.contentSection.set_renderer(BootStrapSectionRenderer(self.contentSection))
         # Deal with the html formatting that VScode/prettier is applying
         test_output = self.contentSection.render()
         test_output = self.test_utils.clean_text(test_output)

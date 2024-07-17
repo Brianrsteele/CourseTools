@@ -43,7 +43,11 @@ class test_image(unittest.TestCase):
         self.assertIsNotNone(self.image.render)
 
     def test_renderer(self) -> None:
-        self.assertEqual(self.image.render(), self.target_html_ouput)
+        markdown_input = self.image.render()
+        html_output = self.target_html_ouput
+        markdown_input = self.test_utils.clean_text(markdown_input)
+        html_output = self.test_utils.clean_text(html_output)
+        self.assertEqual(markdown_input, html_output)
 
 
 if __name__ == "__main__":

@@ -28,10 +28,13 @@ class test_bootstrap_image_renderer(unittest.TestCase):
         del self.image
 
     def test_render(self) -> None:
-        input = self.image.renderer.render()
-        output = self.target_html_output
+        markdown_input = self.image.renderer.render()
+        html_output = self.target_html_output
 
-        self.assertEqual(input, output)
+        markdown_input = self.test_utils.clean_text(markdown_input)
+        html_output = self.test_utils.clean_text(html_output)
+
+        self.assertEqual(markdown_input, html_output)
 
 
 if __name__ == "__main__":

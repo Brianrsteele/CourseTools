@@ -21,9 +21,7 @@ class BootStrapDocumentRenderer(ABCRenderer):
         rendered_document_string += self.document.header.render()
         rendered_document_string += "\n"
         for section in self.document.sections:
-            section.set_renderer(
-                BootStrapSectionRenderer(section.title, section.content)
-            )
+            section.set_renderer(BootStrapSectionRenderer(section))
             rendered_document_string += section.render()
         rendered_document_string += "\n"
         rendered_document_string += self.document.footer.render()

@@ -1,3 +1,5 @@
+## Assignment Summary
+
 Turn in four (4) images in the JPEG file format and a link to a Lightroom album with one hundred (100) images taken for this project.
 
 - You can photograph anything you want.

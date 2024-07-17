@@ -13,7 +13,7 @@ class BootStrapImageRenderer(ABCRenderer):
     # <img class="img-fuid" src="./_images/depth-blur-1.jpg" alt="Water from a fountain spraying in the air in front of ice.">
     def render(self):
         return_html = ""
-        return_html += '<img class="img-fuid" src="'
+        return_html += '<img class="img-fluid" src="'
         return_html += self.image.path
         return_html += '" alt="'
         return_html += self.image.alt_text
