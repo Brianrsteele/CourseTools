@@ -59,4 +59,4 @@ class Figure(ABCDocumentModel):
         self.renderer = renderer
 
     def render(self):
-        return self.renderer.render_image()
+        return self.renderer.render()

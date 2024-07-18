@@ -1,2 +1,2 @@
 - ![This is a test image.](../_images/test.jpg)
-  - Student Work, _Untitled Image_, 2024.
+  - Student Work. _Untitled Image_. 2024.

@@ -1,5 +1,5 @@
 - ![This is a test image.](../_images/test.jpg)
-  - Student Work, _Untitled Image_, 2024.
+  - Student Work. _Untitled Image_. 2024.
   - [Google Images](http://www.google.com/search?q=Diane+Arbus+photographer&tbm=isch)
   - [Wikipedia](http://en.wikipedia.org/wiki/Diane_Arbus)
   - [Youtube](https://www.youtube.com/watch?v=wKXwCctBLQU)

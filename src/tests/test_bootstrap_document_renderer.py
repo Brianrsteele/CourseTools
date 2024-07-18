@@ -69,6 +69,15 @@ class test_bootstrap_document_renderer(unittest.TestCase):
             self.three_section_project_table_markdown_input
         )
 
+        # test document with figures
+        self.figures_document_markdown_input = self.test_utils.read_test_document(
+            "./document/three-section-project-figures.md"
+        )
+        self.figures_document_html_output = self.test_utils.read_test_document(
+            "./document/three-section-project-figures.html"
+        )
+        self.figures_document = Document(self.figures_document_markdown_input)
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.one_section_markdown_input
@@ -130,6 +139,14 @@ class test_bootstrap_document_renderer(unittest.TestCase):
         self.assertEqual(
             three_section_project_table_input, three_section_project_table_output
         )
+
+    def test_render_document_with_figures(self) -> None:
+        # render a document with figures that have captions and links
+        input = self.figures_document.render("Bootstrap")
+        output = self.figures_document_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
+        self.assertEqual(input, output)
 
 
 if __name__ == "__main__":

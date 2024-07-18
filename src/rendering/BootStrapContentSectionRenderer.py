@@ -7,7 +7,9 @@ from rendering.ABCRenderer import ABCRenderer
 import markdown
 import re
 from documentModels.Image import Image
+from documentModels.Figure import Figure
 from rendering.BootStrapImageRenderer import BootStrapImageRenderer
+from rendering.BootStrapFigureRenderer import BootStrapFigureRenderer
 
 
 class BootStrapSectionRenderer(ABCRenderer):
@@ -16,6 +18,7 @@ class BootStrapSectionRenderer(ABCRenderer):
         self.content = content_section.content.strip()
 
     def render(self):
+        self.parse_figures()
         self.parse_single_images_without_captions()
         return_bootstrap = ""
         id = self.title
@@ -57,3 +60,21 @@ class BootStrapSectionRenderer(ABCRenderer):
             replacement_image.set_renderer(BootStrapImageRenderer(replacement_image))
             replacement_image_tag = replacement_image.render()
             self.content = self.content.replace(image, replacement_image_tag)
+
+    def parse_figures(self):
+        # figures = re.findall("(- !\[.*\]\(.*\).*\n)(\s{2}-\s.*\n)*", self.content)
+        # figures = re.findall("- !\[.*\]\(.*\).*\n(\s{2}-\s.*\n)*", self.content)
+        # figures = re.findall("((- !\[.*\]\(.*\).*\n)(\s{2}-\s.*\n)*)", self.content)
+        figures = re.findall(
+            "(-\s{1}!.*\n{1}\s{2}-\s.*\n(\s{2}-\s.*\n)*)", self.content
+        )
+        # figures = re.findall(
+        #     "(-\s{1}!\[.*\]\(.*\)\n\s{2}-\s.*\n){1}",
+        #     self.content,
+        # )
+        for figure in figures:
+            figure = "".join(figure[0])
+            replacement_figure = Figure(figure)
+            replacement_figure.set_renderer(BootStrapFigureRenderer(replacement_figure))
+            replacement_figure_tag = replacement_figure.render()
+            self.content = self.content.replace(figure, replacement_figure_tag)

@@ -56,6 +56,39 @@ class test_bootstrap_section_renderer(unittest.TestCase):
             BootStrapSectionRenderer(self.single_image_content_section)
         )
 
+        # test rendering a content section with a single figure with a caption
+        self.single_figure_caption_markdown_input = self.test_utils.read_test_document(
+            "./content-section/single-figure.md"
+        )
+
+        self.single_figure_caption_html_output = self.test_utils.read_test_document(
+            "./content-section/single-figure.html"
+        )
+
+        self.single_figure_content_section = ContentSection(
+            self.single_figure_caption_markdown_input
+        )
+
+        self.single_figure_bootstrap_renderer = (
+            self.single_figure_content_section.set_renderer(
+                BootStrapSectionRenderer(self.single_figure_content_section)
+            )
+        )
+
+        # test rendering a content section with a figure that has links
+        self.single_figure_links_markdown_input = self.test_utils.read_test_document(
+            "./content-section/single-figure-content-section-links.md"
+        )
+        self.single_figure_links_html_output = self.test_utils.read_test_document(
+            "./content-section/single-figure-content-section-links.html"
+        )
+        self.single_figure_links_content_section = ContentSection(
+            self.single_figure_links_markdown_input
+        )
+        self.single_figure_links_content_section.set_renderer(
+            BootStrapSectionRenderer(self.single_figure_links_content_section)
+        )
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.markdown_input
@@ -78,6 +111,7 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.assertEqual(bootstrap_section, target_output)
 
     def test_render_content_section_with_table(self) -> None:
+        # test rendering a content section that contains a table
         bootstrap_table_output = self.table_content_section.renderer.render()
         bootstrap_table_output = self.test_utils.clean_text(bootstrap_table_output)
         target_table_output = self.table_content_target_html_output
@@ -86,10 +120,30 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         self.assertEqual(bootstrap_table_output, target_table_output)
 
     def test_render_with_single_image_no_captions(self) -> None:
+        # test rendering a single image that should have no figure around it.
         input = self.single_image_content_section.render()
         output = self.single_image_section_target_html_output
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
+        self.assertEqual(input, output)
+
+    def test_render_single_figure_with_caption(self) -> None:
+        # test rendering a figure with an image and caption
+        input = self.single_figure_content_section.render()
+        output = self.single_figure_caption_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
+        self.assertEqual(input, output)
+
+    def test_render_single_figure_with_links(self) -> None:
+        # test rendering a figure with an image, caption, and links
+        input = self.single_figure_links_content_section.render()
+        output = self.single_figure_links_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
+
+        self.test_utils.print_diff(input, output)
+
         self.assertEqual(input, output)
 
 

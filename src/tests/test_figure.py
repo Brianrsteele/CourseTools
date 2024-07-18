@@ -26,7 +26,7 @@ class test_image(unittest.TestCase):
         self.test_image = Image("![This is a test image.](../_images/test.jpg)")
 
         # create caption text to test against
-        self.test_caption_text = "Student Work, _Untitled Image_, 2024."
+        self.test_caption_text = "Student Work. _Untitled Image_. 2024."
 
         # create figure text to test against
         self.figure_text = """  - [Google Images](http://www.google.com/search?q=Diane+Arbus+photographer&tbm=isch)
