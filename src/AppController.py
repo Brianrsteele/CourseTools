@@ -36,8 +36,7 @@ with open(file_path, "r") as file:
 # ------------------------------------------------- Process the article ---------------
 
 document = Document(assignment_text)
-document.parse_document()
-output_html = document.render_document("bootstrap")
+output_html = document.render("bootstrap")
 
 print(output_html)
 
