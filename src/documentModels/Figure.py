@@ -49,10 +49,12 @@ class Figure(ABCDocumentModel):
         Find the text or links for the image.
         """
         text = None
-        if self.markdown_content.split("-")[3:]:
-            text = self.markdown_content.split("-")[3:]
-            text = "-".join(text)
-            text = "    -" + text
+        if self.markdown_content.split("  - ")[2:]:
+            text = self.markdown_content.split("  -")[2:]
+
+            text = "  -".join(text)
+            text = "-" + text
+            # print("------------>", text)
         return text
 
     def set_renderer(self, renderer):

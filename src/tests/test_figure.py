@@ -40,6 +40,12 @@ class test_image(unittest.TestCase):
         # create a Figure object from markdown with a title and text
         self.image_with_text_figure = Figure(self.markdown_input_with_text)
 
+        # import figure text with hypens
+        self.figure_with_hyphen_markdown_input = self.test_utils.read_test_document(
+            "./figure/image-with-hypens.md"
+        )
+        self.figure_with_hyphens = Figure(self.figure_with_hyphen_markdown_input)
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.markdown_input
@@ -62,17 +68,29 @@ class test_image(unittest.TestCase):
         # image with a caption and text
         self.assertEqual(self.image_with_text_figure.caption, self.test_caption_text)
 
+    def test_parse_caption_with_hyphens(self) -> None:
+        figure_input = self.figure_with_hyphens.caption
+        figure_output = self.test_caption_text
+        figure_input = self.test_utils.clean_text(figure_input)
+        figure_output = self.test_utils.clean_text(figure_output)
+        self.assertEqual(figure_input, figure_output)
+
     def test_parse_text(self) -> None:
         input_markdown = self.image_with_text_figure.text
         test_markdown = self.figure_text
         # clean up the text for easier comparison
         input_markdown = self.test_utils.clean_text(input_markdown)
         test_markdown = self.test_utils.clean_text(test_markdown)
-
         self.assertEqual(input_markdown, test_markdown)
 
         # A figure without text should return None for the text
         self.assertEqual(self.image_with_title_figure.text, None)
+
+    def test_parse_text_with_hyphens(self) -> None:
+        input = self.figure_with_hyphens.text
+        output = None
+
+        self.assertEquals(input, output)
 
     def test_set_renderer(self) -> None:
         pass
