@@ -1,6 +1,6 @@
 ## Three
 
-- ![This is a test image](../_images/test.jpg)
+- ![This is a test image with a caption and links](../_images/test.jpg)
   - Student Work. _Untitled Image_. 2024.
   - [Google Images](http://www.google.com/search?q=Diane+Arbus+photographer&tbm=isch)
   - [Wikipedia](http://en.wikipedia.org/wiki/Diane_Arbus)

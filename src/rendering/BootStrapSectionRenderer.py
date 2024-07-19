@@ -18,7 +18,7 @@ class BootStrapSectionRenderer(ABCRenderer):
         self.content = content_section.content.strip()
 
     def render(self):
-        self.parse_figures()
+        self.content = self.parse_figures()
         self.parse_single_images_without_captions()
         return_bootstrap = ""
         id = self.title
@@ -40,13 +40,14 @@ class BootStrapSectionRenderer(ABCRenderer):
         return_text = ""
         text_lines = text.split("\n")
         for line in text_lines:
-            if line.startswith("<li>"):
-                line = "            " + line + "\n"
+            if len(line) == 0:
+                pass
             else:
-                line = "        " + line + "\n"
-            return_text += line
-        # get rid of the new line at the end of the section
-        # return_text = return_text[:-1]
+                if line.startswith("<li>"):
+                    line = "            " + line + "\n"
+                else:
+                    line = "        " + line + "\n"
+                return_text += line
         return return_text
 
     def make_tables_pretty(self, text):
@@ -62,19 +63,16 @@ class BootStrapSectionRenderer(ABCRenderer):
             self.content = self.content.replace(image, replacement_image_tag)
 
     def parse_figures(self):
-        # figures = re.findall("(- !\[.*\]\(.*\).*\n)(\s{2}-\s.*\n)*", self.content)
-        # figures = re.findall("- !\[.*\]\(.*\).*\n(\s{2}-\s.*\n)*", self.content)
-        # figures = re.findall("((- !\[.*\]\(.*\).*\n)(\s{2}-\s.*\n)*)", self.content)
-        figures = re.findall(
-            "(-\s{1}!.*\n{1}\s{2}-\s.*\n(\s{2}-\s.*\n)*)", self.content
-        )
-        # figures = re.findall(
-        #     "(-\s{1}!\[.*\]\(.*\)\n\s{2}-\s.*\n){1}",
-        #     self.content,
-        # )
-        for figure in figures:
-            figure = "".join(figure[0])
-            replacement_figure = Figure(figure)
-            replacement_figure.set_renderer(BootStrapFigureRenderer(replacement_figure))
-            replacement_figure_tag = replacement_figure.render()
-            self.content = self.content.replace(figure, replacement_figure_tag)
+        content = self.content
+        if "- ![" not in self.content:
+            return self.content
+        else:
+            raw_figure_list = content.split("- ![]")
+            for raw_figure in raw_figure_list:
+                raw_figure = raw_figure.split("\n\n")
+                raw_figure = "".join(raw_figure[0])
+                figure = Figure(raw_figure)
+                figure.set_renderer(BootStrapFigureRenderer(figure))
+                content = content.replace(raw_figure, figure.render())
+            self.content = content
+        return self.content

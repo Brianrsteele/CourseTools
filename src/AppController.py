@@ -38,7 +38,5 @@ with open(file_path, "r") as file:
 document = Document(assignment_text)
 output_html = document.render("bootstrap")
 
-print(output_html)
-
 with open(html_file_path, "w") as file:
     file.write(output_html)

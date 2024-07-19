@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 import unittest
 import tests.TestingUtilities as TestingUtilities
-from rendering.BootStrapContentSectionRenderer import BootStrapSectionRenderer
+from rendering.BootStrapSectionRenderer import BootStrapSectionRenderer
 from documentModels.ContentSection import ContentSection
 
 
@@ -131,8 +131,10 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         # test rendering a figure with an image and caption
         input = self.single_figure_content_section.render()
         output = self.single_figure_caption_html_output
+
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
+
         self.assertEqual(input, output)
 
     def test_render_single_figure_with_links(self) -> None:

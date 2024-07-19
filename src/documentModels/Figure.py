@@ -19,7 +19,7 @@ class Figure(ABCDocumentModel):
         self.renderer = None
 
     def __str__(self):
-        return None
+        return f"{self.image}: {self.caption}\n{self.text}"
 
     def parse(self):
         self.image = self.parse_image()

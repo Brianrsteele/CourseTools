@@ -6,8 +6,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from rendering.ABCRenderer import ABCRenderer
 from rendering.BootStrapHeaderRenderer import BootStrapHeaderRenderer
 from rendering.BootStrapFooterRenderer import BootStrapFooterRenderer
-from rendering.BootStrapContentSectionRenderer import BootStrapSectionRenderer
-import markdown
+from rendering.BootStrapSectionRenderer import BootStrapSectionRenderer
 
 
 class BootStrapDocumentRenderer(ABCRenderer):

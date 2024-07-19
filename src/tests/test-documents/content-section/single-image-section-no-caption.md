@@ -1,6 +1,6 @@
 ## Summary
 
-![This is a test image.](../_images/test.jpg)
+![This is a test image with no caption and shouldn't be a figure.](../_images/test.jpg)
 
 Turn in fifty (50) JPEG images and four (4) DNG files of new images you have taken for this assignment. The DNG files should represent the four strongest images you have taken for the project.
 

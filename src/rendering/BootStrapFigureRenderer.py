@@ -16,7 +16,7 @@ class BootStrapFigureRenderer(ABCRenderer):
     # <img class="img-fuid" src="./_images/depth-blur-1.jpg" alt="Water from a fountain spraying in the air in front of ice.">
     def render(self):
         return_html = ""
-        return_html += '<figure class="figure">\n    '
+        return_html += '<figure class="w-75 figure">\n    '
         self.figure.image.set_renderer(BootStrapImageRenderer(self.figure.image))
         image_output = self.figure.image.render()
         image_output = image_output.replace(
