@@ -89,6 +89,24 @@ class test_bootstrap_section_renderer(unittest.TestCase):
             BootStrapSectionRenderer(self.single_figure_links_content_section)
         )
 
+        # test rendering a content section that has three figures with captions
+        self.three_figures_with_captions_markdown_input = (
+            self.test_utils.read_test_document(
+                "./content-section/three-figure-captions.md"
+            )
+        )
+        self.three_figures_with_captions_html_output = (
+            self.test_utils.read_test_document(
+                "./content-section/three-figure-captions.html"
+            )
+        )
+        self.three_figures_with_captions_content_sections = ContentSection(
+            self.three_figures_with_captions_markdown_input
+        )
+        self.three_figures_with_captions_content_sections.set_renderer(
+            BootStrapSectionRenderer(self.three_figures_with_captions_content_sections)
+        )
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.markdown_input
@@ -143,9 +161,13 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         output = self.single_figure_links_html_output
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
+        self.assertEqual(input, output)
 
-        self.test_utils.print_diff(input, output)
-
+    def test_render_three_figures_with_captions(self) -> None:
+        input = self.three_figures_with_captions_content_sections.render()
+        output = self.three_figures_with_captions_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
         self.assertEqual(input, output)
 
 

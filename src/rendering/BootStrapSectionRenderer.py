@@ -71,8 +71,19 @@ class BootStrapSectionRenderer(ABCRenderer):
             for raw_figure in raw_figure_list:
                 raw_figure = raw_figure.split("\n\n")
                 raw_figure = "".join(raw_figure[0])
-                figure = Figure(raw_figure)
-                figure.set_renderer(BootStrapFigureRenderer(figure))
-                content = content.replace(raw_figure, figure.render())
+                individual_figures = raw_figure.split("- ![")
+                # a list of images with captions will be parsed as
+                # a figure with a bunch of text. We need to
+                # further parse subsequent images into their own
+                # figures. If there is only one individual figure
+                # then the loop only goes around once.
+                #
+                # start at [1:] to get rid of empty string
+                # at front of the list returned from split
+                for figure in individual_figures[1:]:
+                    figure = "- ![" + figure
+                    new_figure = Figure(figure)
+                    new_figure.set_renderer(BootStrapFigureRenderer(new_figure))
+                    content = content.replace(figure, new_figure.render())
             self.content = content
         return self.content
