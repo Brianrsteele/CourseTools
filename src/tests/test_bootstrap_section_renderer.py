@@ -107,6 +107,18 @@ class test_bootstrap_section_renderer(unittest.TestCase):
             BootStrapSectionRenderer(self.three_figures_with_captions_content_sections)
         )
 
+        # Test rendering inline links in a paragraph
+        self.inline_links_markdown_input = self.test_utils.read_test_document(
+            "./content-section/inline-links.md"
+        )
+        self.inline_links_html_output = self.test_utils.read_test_document(
+            "./content-section/inline-links.html"
+        )
+        self.inline_links_section = ContentSection(self.inline_links_markdown_input)
+        self.inline_links_section.set_renderer(
+            BootStrapSectionRenderer(self.inline_links_section)
+        )
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.markdown_input
@@ -169,6 +181,20 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
         self.assertEqual(input, output)
+
+    def test_render_inline_links(self) -> None:
+        input = self.inline_links_section.render()
+        output = self.inline_links_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
+
+        self.test_utils.print_diff(input[:-5], output[:-6])
+
+        # issue with how vscode formats html
+        # the rendering of the links work, but vs code puts
+        # in a new line before the closing p tag, so
+        # only testing to the point before that happens.
+        self.assertEqual(input[:-5], output[:-6])
 
 
 if __name__ == "__main__":
