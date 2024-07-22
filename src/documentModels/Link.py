@@ -39,7 +39,7 @@ class Link(ABCDocumentModel):
         """
         link_text = self.markdown_content
         link_text = link_text.split("](")[0].strip()
-        link_text = link_text[2:]
+        link_text = link_text[1:]
         return link_text
 
     def set_renderer(self, renderer):

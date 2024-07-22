@@ -1,1 +1,1 @@
-![A link to CNN](https://cnn.com)
+[A link to CNN](https://cnn.com)

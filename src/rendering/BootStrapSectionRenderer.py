@@ -8,8 +8,10 @@ import markdown
 import re
 from documentModels.Image import Image
 from documentModels.Figure import Figure
+from documentModels.Link import Link
 from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 from rendering.BootStrapFigureRenderer import BootStrapFigureRenderer
+from rendering.BootStrapLinkRenderer import BootStrapLinkRenderer
 
 
 class BootStrapSectionRenderer(ABCRenderer):
@@ -18,6 +20,7 @@ class BootStrapSectionRenderer(ABCRenderer):
         self.content = content_section.content.strip()
 
     def render(self):
+        self.content = self.parse_links()
         self.content = self.parse_figures()
         self.parse_single_images_without_captions()
         return_bootstrap = ""
@@ -86,4 +89,24 @@ class BootStrapSectionRenderer(ABCRenderer):
                     new_figure.set_renderer(BootStrapFigureRenderer(new_figure))
                     content = content.replace(figure, new_figure.render())
             self.content = content
+        return self.content
+
+    def parse_links(self):
+        # Find the links in the text and format using bootstrap
+        content = self.content
+        if " [" not in content:
+            return self.content
+        else:
+            raw_link_list = content.split(" [")[1:]
+            # find the markdown links and swap for bootstrap links
+            for markdown_link in raw_link_list:
+                markdown_link = markdown_link.split(")")[0]
+                # replace missing characters
+                markdown_link = "[" + markdown_link + ")"
+                html_link_object = Link(markdown_link)
+                html_link_object.set_renderer(BootStrapLinkRenderer(html_link_object))
+                html_link = html_link_object.render()
+                content = content.replace(markdown_link, html_link)
+            # print(raw_link_list)
+        self.content = content
         return self.content
