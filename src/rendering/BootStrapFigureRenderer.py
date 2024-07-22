@@ -4,7 +4,6 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from rendering.ABCRenderer import ABCRenderer
-from documentModels.Image import Image
 from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 import markdown
 
