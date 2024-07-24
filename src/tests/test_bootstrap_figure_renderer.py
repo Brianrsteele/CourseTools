@@ -7,6 +7,7 @@ import unittest
 import tests.TestingUtilities as TestingUtilities
 from documentModels.Image import Image
 from documentModels.Figure import Figure
+
 from rendering.BootStrapImageRenderer import BootStrapImageRenderer
 from rendering.BootStrapFigureRenderer import BootStrapFigureRenderer
 
@@ -58,6 +59,8 @@ class test_bootstrap_image_renderer(unittest.TestCase):
 
         markdown_input = self.test_utils.clean_text(markdown_input)
         html_output = self.test_utils.clean_text(html_output)
+
+        self.test_utils.print_diff(markdown_input, html_output)
 
         self.assertEqual(markdown_input, html_output)
 
