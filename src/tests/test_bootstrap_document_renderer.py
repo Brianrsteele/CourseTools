@@ -78,6 +78,23 @@ class test_bootstrap_document_renderer(unittest.TestCase):
         )
         self.figures_document = Document(self.figures_document_markdown_input)
 
+        # set up docoment with student and real world examples
+        self.gallery_with_student_and_real_world_examples_markdown_input = (
+            self.test_utils.read_test_document(
+                "./document/student-and-example-gallery.md"
+            )
+        )
+
+        self.gallery_with_student_and_real_world_examples_html_output = (
+            self.test_utils.read_test_document(
+                "./document/student-and-example-gallery.html"
+            )
+        )
+
+        self.gallery_document = Document(
+            self.gallery_with_student_and_real_world_examples_markdown_input
+        )
+
     def tearDown(self) -> None:
         del self.test_utils
         del self.one_section_markdown_input
@@ -144,6 +161,13 @@ class test_bootstrap_document_renderer(unittest.TestCase):
         # render a document with figures that have captions and links
         input = self.figures_document.render("Bootstrap")
         output = self.figures_document_html_output
+        input = self.test_utils.clean_text(input)
+        output = self.test_utils.clean_text(output)
+        self.assertEqual(input, output)
+
+    def test_tender_document_with_student_and_real_world_examples(self) -> None:
+        input = self.gallery_document.render("Bootstrap")
+        output = self.gallery_with_student_and_real_world_examples_html_output
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
         self.assertEqual(input, output)

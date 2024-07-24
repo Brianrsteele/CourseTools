@@ -7,6 +7,7 @@ from rendering.ABCRenderer import ABCRenderer
 from rendering.BootStrapHeaderRenderer import BootStrapHeaderRenderer
 from rendering.BootStrapFooterRenderer import BootStrapFooterRenderer
 from rendering.BootStrapSectionRenderer import BootStrapSectionRenderer
+from rendering.BootStrapGallerySectionRenderer import BootStrapGallerySectionRenderer
 
 
 class BootStrapDocumentRenderer(ABCRenderer):
@@ -19,8 +20,15 @@ class BootStrapDocumentRenderer(ABCRenderer):
         document.footer.set_renderer(BootStrapFooterRenderer(self.document.footer))
         rendered_document_string += self.document.header.render()
         rendered_document_string += "\n"
+        # Check to see if the section is a Student Examples section or a Real World Examples Section
         for section in self.document.sections:
-            section.set_renderer(BootStrapSectionRenderer(section))
+            if (
+                "Student Examples" in section.title
+                or "Real World Examples" in section.title
+            ):
+                section.set_renderer(BootStrapGallerySectionRenderer(section))
+            else:
+                section.set_renderer(BootStrapSectionRenderer(section))
             rendered_document_string += section.render()
         rendered_document_string += "\n"
         rendered_document_string += self.document.footer.render()
