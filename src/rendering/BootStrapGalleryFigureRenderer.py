@@ -15,15 +15,15 @@ class BootStrapGalleryFigureRenderer(ABCRenderer):
     # <img class="img-fuid" src="./_images/depth-blur-1.jpg" alt="Water from a fountain spraying in the air in front of ice.">
     def render(self):
         return_html = ""
-        return_html += '<div class="col">\n'
-        return_html += '<figure class="figure">\n    '
+        return_html += '<div class="col-xl-4">\n'
+        return_html += '<figure class="m-4 shadow rounded figure">\n    '
         self.figure.image.set_renderer(BootStrapImageRenderer(self.figure.image))
         image_output = self.figure.image.render()
         image_output = image_output.replace(
             'class="img-fluid"', 'class="figure-img img-fluid"'
         )
         return_html += image_output + "\n    "
-        return_html += '<figcaption class="figure-caption">\n'
+        return_html += '<figcaption class="m-4 figure-caption">\n'
         caption_output = markdown.markdown(self.figure.caption)
         return_html += caption_output + "\n    "
         return_html += "</figcaption>\n"

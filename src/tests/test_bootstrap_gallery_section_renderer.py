@@ -42,9 +42,6 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         output = self.target_html_output
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
-
-        self.test_utils.print_diff(input, output)
-
         self.assertEqual(input, output)
 
 
