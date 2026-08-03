@@ -1,0 +1,255 @@
+---
+id: "ART 1184 - Important Dates, Spring 2026"
+course_id: "ART-1184-S26-01"
+source_of_truth: true
+term_ref: "S26"
+
+meeting_pattern:
+  days: ["Monday", "Wednesday"]
+  time: "2:00 p.m. - 3:50 p.m."
+
+weekly_due_dates:
+  default_due_day: "Sunday"
+  default_due_time: "11:59 p.m."
+
+weeks:
+  - kind: weekly_summary
+    week: 1
+    topic: "Introductions"
+    readings:
+      - title: "Syllabus"
+    projects:
+      assigned: []
+    discussions:
+      - id: "week_1_discussion"
+        due_week: 1
+    exams:
+      - id: "syllabus_quiz"
+        due_week: 1
+  - kind: weekly_summary
+    week: 2
+    topic: "Computer Literacy"
+    readings:
+      - title: "macOS or Windows 10 LinkedIn Learning Video Playlist"
+      - title: "D2L/Brightspace, Email, and OneDrive LinkedIn Learning Video Playlist"
+      - title: "Composition I LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "computer_exercise"
+          due_week: 2
+    discussions:
+      - id: "week_2_discussion"
+        due_week: 2
+    exams:
+      - id: "computer_quiz"
+        due_week: 2
+      - id: "d2l_quiz"
+        due_week: 2
+      - id: "composition_1_quiz"
+        due_week: 2
+  - kind: weekly_summary
+    week: 3
+    topic: "Cameras"
+    readings:
+      - title: "Canon or Nikon LinkedIn Learning Video Playlist"
+      - title: "Camera Overview Videos"
+    projects:
+      assigned:
+        - id: "camera_worksheet"
+          due_week: 3
+    discussions:
+      - id: "week_3_discussion"
+        due_week: 3
+    exams:
+      - id: "camera_quiz"
+        due_week: 3
+  - kind: weekly_summary
+    week: 4
+    topic: "Lightroom I"
+    readings:
+      - title: "Importing and Exporting Images LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "importing_exporting_images"
+          due_week: 4
+        - id: "first_light_project"
+          assigned_week: 4
+          due_week: 5
+    discussions:
+      - id: "week_4_discussion"
+        due_week: 4
+    exams:
+      - id: "importing_exporting_quiz"
+        due_week: 4
+  - kind: weekly_summary
+    week: 5
+    topic: "Lightroom I"
+    readings: []
+    projects:
+      assigned:
+        - id: "first_light_project"
+          assigned_week: 4
+          due_week: 5
+    discussions:
+      - id: "week_5_discussion"
+        due_week: 5
+    exams: []
+  - kind: weekly_summary
+    week: 6
+    topic: "Lenses"
+    readings:
+      - title: "Lenses LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "focal_length_exercise"
+          due_week: 6
+        - id: "depth_of_field_exercise"
+          due_week: 6
+    discussions:
+      - id: "week_6_discussion"
+        due_week: 6
+    exams:
+      - id: "reciprocity_quiz"
+        due_week: 6
+      - id: "lenses_quiz"
+        due_week: 6
+  - kind: weekly_summary
+    week: 7
+    topic: "Shutters"
+    readings:
+      - title: "Shutter Speed LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "shutter_speed_exercise"
+          due_week: 7
+        - id: "depth_blur_project"
+          assigned_week: 7
+          due_week: 8
+    discussions:
+      - id: "week_7_discussion"
+        due_week: 7
+    exams:
+      - id: "shutter_speed_quiz"
+        due_week: 7
+  - kind: weekly_summary
+    week: 8
+    topic: "Shutters"
+    readings:
+      - title: "Composition II LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "depth_blur_project"
+          assigned_week: 7
+          due_week: 8
+    discussions:
+      - id: "week_8_discussion"
+        due_week: 8
+    exams:
+      - id: "composition_2_quiz"
+        due_week: 8
+  - kind: weekly_summary
+    week: 9
+    topic: "Lightroom II"
+    readings:
+      - title: "Correcting Images LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "correcting_images_exercise"
+          assigned_week: 9
+          due_week: 10
+    discussions:
+      - id: "week_9_discussion"
+        due_week: 9
+    exams:
+      - id: "correcting_images_quiz_1"
+        due_week: 9
+  - kind: weekly_summary
+    week: 10
+    topic: "Lightroom II"
+    readings:
+      - title: "Correcting Images Part 2 LinkedIn Learning Video Playlist"
+      - title: "Composition III LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "correcting_images_exercise"
+          due_week: 10
+        - id: "image_analysis_paper"
+          assigned_week: 10
+          due_week: 13
+    discussions:
+      - id: "week_10_discussion"
+        due_week: 10
+    exams:
+      - id: "correcting_images_quiz_2"
+        due_week: 10
+      - id: "composition_3_quiz"
+        due_week: 10
+  - kind: weekly_summary
+    week: 11
+    topic: "Point of View"
+    readings: []
+    projects:
+      assigned:
+        - id: "point_of_view_project"
+          due_week: 11
+    discussions:
+      - id: "week_11_discussion"
+        due_week: 11
+    exams: []
+  - kind: weekly_summary
+    week: 12
+    topic: "Portraits"
+    readings:
+      - title: "Portraits and Lighting LinkedIn Learning Video Playlist"
+    projects:
+      assigned:
+        - id: "four_kinds_of_light_portraits_project"
+          due_week: 12
+    discussions:
+      - id: "week_12_discussion"
+        due_week: 12
+    exams:
+      - id: "portrait_and_lighting_quiz"
+        due_week: 12
+  - kind: weekly_summary
+    week: 13
+    topic: "Final Project"
+    readings: []
+    projects:
+      assigned:
+        - id: "final_project"
+          due_week: 16
+    discussions:
+      - id: "week_13_discussion"
+        due_week: 13
+    exams: []
+  - kind: weekly_summary
+    week: 14
+    topic: "Final Project"
+    readings: []
+    projects:
+      assigned: []
+    discussions:
+      - id: "week_14_discussion"
+        due_week: 14
+    exams: []
+  - kind: weekly_summary
+    week: 15
+    topic: "Final Project"
+    readings: []
+    projects:
+      assigned: []
+    discussions:
+      - id: "week_15_discussion"
+        due_week: 15
+    exams: []
+  - kind: weekly_summary
+    week: 16
+    topic: "Final Project"
+    readings: []
+    projects:
+      assigned: []
+    discussions:
+      - id: "week_16_discussion"
+        due_week: 16
+    exams: []

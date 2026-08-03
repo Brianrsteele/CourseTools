@@ -1,0 +1,7 @@
+- This class is presented entirely online. In-person attendance policies do not apply. These are the online participation policies.
+- Students must participate in at least one graded activity every two weeks — a quiz, a discussion, or an assignment.
+- Students who have not completed a graded activity in the last two weeks will be given an FW for a course grade, which will also withdraw them from the course.
+- This policy is a request of the RCTC administration. Students who are dropped early in the semester with an FW can sometimes get some of their tuition money back for the course.
+- If you receive a grade of FW, please contact your academic advisor and coach right away and make sure you understand what your next steps are.
+- If you’re facing challenges that may impact your course participation, please reach out so we can discuss how to keep you on track.
+- If you find yourself behind on course material, that’s a signal to reach out early.

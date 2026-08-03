@@ -1,0 +1,59 @@
+# 05_institutional_S26.yml
+# File for institutional-level term dates.
+# This file contains ONLY registrar-defined and campus-wide calendar facts.
+# All courses reference this file using `term_ref: "TERM"`.
+
+metadata:
+  version: 1.0
+  created_by: "Brian Steele"
+  created_on: 2025-12-5
+  comments: >
+    Institutional calendar for TERM. This file is the source of truth for all
+    campus-wide dates: start/end of term, drop/withdraw deadlines, holidays,
+    closures, and institutional constraints. Individual courses must NOT add
+    their own dates here.
+
+term_id: "S26" # e.g. "F25" or "S26"
+label: "Spring 2026" # e.g. "Fall 2025"
+
+institutional_dates:
+  # -----------------------------------------------------------
+  # Core term dates — pulled directly from Registrar.
+  # -----------------------------------------------------------
+  start_date: 2026-01-12 # First day of instruction campus-wide
+  end_date: 2026-05-12 # Last day of classes campus-wide
+
+  last_day_to_drop_full_term: 2026-01-16 # Registrar-defined
+  last_day_to_withdraw_full_term: 2026-04-20 # Registrar-defined
+
+  # -----------------------------------------------------------
+  # No-class days and campus closures
+  # Use `date:` for single days, or `date_range:` for multi-day closures.
+  # -----------------------------------------------------------
+  holidays_and_closures:
+    - kind: institutional_event
+      date: 2026-01-19
+      label: "MLK Day - No Classes"
+    - kind: institutional_event
+      date: 2026-02-03
+      label: "All Employee Development Day - No Classes"
+    - kind: institutional_event
+      date: 2026-02-16
+      label: "Presidents' Day - No Classes"
+    - kind: institutional_event
+      subkind: spring_break
+      date_range:
+        start: 2026-03-09
+        end: 2026-03-13
+      label: "Spring Break - No Classes"
+    - kind: institutional_event
+      date: 2026-04-16
+      label: "Faculty Development Day - No Classes"
+    - kind: institutional_event
+      date: 2026-05-13
+      label: "Faculty Development Day/Commencement - No Classes"
+
+  # -----------------------------------------------------------
+  # Days when classes meet but additional rules apply.
+  # Example: "General Election – No campus events 6–8pm"
+  # -----------------------------------------------------------

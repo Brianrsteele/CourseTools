@@ -1,0 +1,289 @@
+course:
+  id: ART-2281-S26-31 # OPTIONAL – e.g. "ART-1184-F25-01"
+  semester: Spring # REQUIRED – "Fall", "Spring", etc.
+  year: 2026 # REQUIRED – e.g. 2025
+  section: 31 # REQUIRED – e.g. "01"
+  modality: hybrid # REQUIRED – "in-person" | "online" | "hybrid"
+
+  course_number: 2281
+  department: ART
+  course_title: Professional Portfolio
+  course_number_and_title: ART 2281 - Professional Portfolio # REQUIRED – e.g. "ART 1184 – Photography I"
+  credits: 3
+  hours: 5 hours/week (1 lecture, 4 lab) # REQUIRED – e.g. "3 credits, 6 hours/week (2 lecture, 4 lab)"
+
+  meeting_times: # REQUIRED for in-person/synchronous
+    days: Tuesdays # e.g. "Mon/Wed"
+    time: 12:00 p.m. - 1:50 p.m. # e.g. "10:00–11:50 a.m."
+  classroom: East Hall 265 # OPTIONAL for fully online; REQUIRED otherwise
+
+  catalog_description: |
+    This course prepares students for future study or careers in the fields of Art and Design. Students will develop a personal portfolio of art or design work, prepare supplementary materials including but not limited to a resume and art statement, and complete a digital portfolio of their work. History lectures will focus on major themes in the History of Photography, while students will research and present on artists of influence related to their own work in their chosen field. This course emphasizes principles of professionalism to prepare students for their future artistic endeavors. Students should have taken at least one college level studio art course before taking this course.
+  prerequisites: "None"
+  major_content_outline: |
+    1. Portfolio development
+    2. Professional practices
+      - Resume
+      - Artist statement
+      - Professionalism in the Arts
+      - Basic digital skills for Arts careers
+    3. Historical and contemporary art themes
+      - Major themes in the History of Photography
+      - Contemporary art Practice
+      - Artists of influence research
+    4. Portfolio Presentation
+      - Exhibition
+      - Digital portfolio
+      - Oral Presentation
+      - Documentation of artwork
+
+  course_learning_outcomes: |
+    1. Create a portfolio that demonstrates aesthetic growth by achieving core technical and conceptual proficiencies.
+    2. Practice professionalism through the creation of supplementary materials such as resume, artist statement, etc.
+    3. Conduct and present independent research to support future growth within the fields of Art and Design.
+    4. Articulate the effectiveness of personal artwork, the work of others, and the cultural value of the Arts through critique and oral presentation.
+
+  am_i_ready: |
+    The only prerequisite for this course is a desire to prepare your artwork for professional presentation. Ideally, you would have at least one college studio art course completed before you take the course, but that is a suggestion and not a requirement. Students enter this course with a wide range of experience levels, technical comfort, and confidence, and that is expected. This course is designed for growth. No one is expected to have everything figured out on the first day, and progress over the semester matters more than where you begin. Planning, consistent work, and clear communication are far more important than any idea of innate talent.
+  how_course_works: |
+    This course emphasizes the organization of your artwork into a professional presentation with high quality documentation of the work, an artist's statement, a professional resume, and other materials. By the end of the semester, the class will ask you to research and submit your portfolio materials to applications for three to five professional art opportunities. We will also produce a book with artwork and course materials from students in the course as a kind of exhibition catalog. This looks overwhelming right now, but we will emphasize learning and growth. If you are overwhelmed, prioritize the work and its documentation. Everything else exists to help that succeed.
+
+  mntc_goals: "This course meets no MnTC goals."
+  rctc_core_outcomes:
+    - Critical Thinking
+
+  required_materials:
+    camera: [
+        "If you are not a photography major, you will want access to a Digital SLR camera.",
+      ] # e.g. ["DSLR with manual controls and RAW support"]
+    software: ["None"] # e.g. ["Adobe Lightroom"]
+    textbooks:
+      - "None" # list of texts or ["None"]
+    fees:
+      - "No additional course fees for software will be charged to this course."
+        # e.g. ["Studio fee $20"]
+    other: ["None"] # SD cards, drives, etc.
+
+  grading_system: Each assignment will be provided with a rubric in D2L/Brightspace. # REQUIRED – narrative of how grades work
+  grading_type: points
+  assessment_structure:
+    summary: D2L will add up your points in the online grade book and compute a percentage score for the points you have earned. I will use the standard RCTC grade scale to figure out the letter grade. Please note that RCTC doesn’t use pluses or minuses for final grades.
+    assessments:
+      - id: portfolio
+        code: P1
+        label: Professional Presentation
+        kind: project
+        module: Professional Assembly and Documentation
+        points: 35
+      - id: research_1
+        code: R1
+        label: What Portfolios are For
+        kind: research
+        module: Orientation & The Big Picture
+        points: 1
+      - id: bodies_of_work_1
+        code: C1
+        label: Initial Work Critique
+        kind: critique
+        module: Direction, Not Decisions
+        points: 5
+      - id: research_2
+        code: R2
+        label: Bodies of Work & Coherence
+        kind: research
+        module: Direction, Not Decisions
+        points: 1
+      - id: portfolio_1
+        code: C2
+        label: Portfolio Development Meeting 1
+        kind: critique
+        module: Feasibility & Planning
+        points: 1
+      - id: research_3
+        code: R3
+        label: Audience, Voice, and Professional Tone
+        kind: research
+        module: Feasibility & Planning
+        points: 1
+      - id: documentation
+        code: P2
+        label: Artwork Documentation
+        kind: project
+        module: Documentation as Professional Skill
+        points: 20
+      - id: research_4
+        code: R4
+        label: Documenting Artwork
+        kind: research
+        module: Documentation as a Professional Skill
+        points: 1
+      - id: artists_statement_1
+        code: P1a
+        label: Artist Statement Draft 1
+        kind: project
+        module: Writing to Think
+        points: 1
+      - id: research_5
+        code: R5
+        label: Writing About Work - Artist Statements
+        kind: research
+        module: Writing to Think
+        points: 1
+      - id: resume_1
+        code: P1b
+        label: CV or Resume Draft 1
+        kind: project
+        module: Professional Identity
+        points: 1
+      - id: research_6
+        code: R6
+        label: CVs and Resumes for Artists
+        kind: research
+        module: Professional Identity
+        points: 1
+      - id: bodies_of_work_2
+        code: C3
+        label: Portfolio Development Touchpoint 2
+        kind: critique
+        module: Editing, Sequencing, Coherence
+        points: 5
+      - id: research_7
+        code: R7
+        label: Editing, Sequencing, and Scale
+        kind: research
+        module: Editing, Sequencing, Coherence
+        points: 1
+      - id: revisions_1
+        code: P1c
+        label: Revisions (Statement, CV, Portfolio)
+        kind: project
+        module: Mid-Semester Reset and Revision
+        points: 1
+      - id: research_8
+        code: R8
+        label: Rejection, Feedback, & Resilience 1
+        kind: research
+        module: Mid-Semester Reset and Revision
+        points: 1
+      - id: applications
+        code: P3
+        label: Applications and Submissions
+        kind: project
+        module: Portfolios in Use (Applications)
+        points: 20
+      - id: research_9
+        code: R9
+        label: Submitting Work (Exhibitions and Opportunities)
+        kind: research
+        module: Portfolios in Use (Applications)
+        points: 1
+      - id: research_10
+        code: R10
+        label: Portfolio Websites & Online Presence
+        kind: research
+        module: Digital Portfolio Foundations
+        points: 1
+      - id: research_11
+        code: R11
+        label: Social Media as a Portfolio Tool
+        kind: research
+        module: Optional Platforms and Visibility
+        points: 1
+      - id: ecosystem
+        code: P5
+        label: Local Arts Ecosystem Scan
+        kind: project
+        module: Local Contexts & Art Ecosystems
+        points: 10
+      - id: research_12
+        code: R12
+        label: Paths Forward (Education, Grants, & Opportunities)
+        kind: research
+        module: Local Contexts & Art Ecosystems
+        points: 1
+      - id: revisions_2
+        code: P1d
+        label: Final Drafts (Statements, CV, Portfolio)
+        kind: project
+        module: Synthesis and Final Writing
+        points: 1
+      - id: research_13
+        code: R13
+        label: Four-Year Schools Pathways & Transfer Options
+        kind: research
+        module: Synthesis and Final Writing
+        points: 1
+      - id: presentation
+        code: P4
+        label: Presentation
+        kind: project
+        module: Portfolio-in-Use Presentations
+        points: 10
+      - id: research_14
+        code: R14
+        label: Audience, Voice, & Professional Tone
+        kind: research
+        module: Portfolio-in-Use Presentations
+        points: 1
+      - id: catalog
+        code: P6
+        label: Class Exhibition Catalog
+        kind: project
+        module: Professional Assembly & Documentation
+        points: 5
+      - id: research_15
+        code: R15
+        label: Captions, Metadata, and Documentation Standards
+        kind: research
+        module: Professional Assembly & Documentation
+        points: 1
+      - id: final_portfolio
+        code: P1e
+        label: Final Versions of Portfolio
+        kind: project
+        module: Reflection & Durability
+        points: 1
+      - id: research_16
+        code: R16
+        label: Rejection, Feedback, & Resilience 2
+        kind: research
+        module: Reflection & Durability
+        points: 1
+
+    components: []
+
+  chart_image:
+    path: "ART-2281-S26-grades.png" # relative to the syllabus file or project root
+    alt: "Pie chart showing grade breakdown for ART 2281"
+    caption: "Figure 1. Grade breakdown by assessment category."
+
+  what_matters_grade: |
+    The first priority of this course is assembling an exhibition portfolio with an artist statement, resume, and documentation of your artwork. That is where the bulk of the points are found. Be prepared by doing research and discussions. We will meet in class and one on one to look at your artwork. If you show up, are prepared, and participate, you will get the points. There are a couple of other activities related to art professional practices that will make sense when we get to them.
+  attendance_variant: "hybrid" # or "in-person" – matches which FAQ block you intend to use
+  ai_policy_variant: "Generative AI Policy" # internal title in 01_policies.md
+
+  policies:
+    required_sections:
+      - Software Requirements
+      - Camera Checkout Policy
+      - Internet Access Requirements
+      - Computer Requirements
+      - Attendance Policy
+      - Late Work Policy
+      - Grading Overview
+      - Final Grade Calculation
+      - Assignment Grading Process
+      - Grading Turnaround Time
+      - Alternative Feedback Format
+      - Lab Access Policy
+      - RCTC Core Outcomes
+      - Course-Specific Academic Integrity Notes
+      - Generative AI Policy
+      - Academic Integrity Statement
+      - Americans with Disabilities Act
+      - Military Friendly Statement
+      - Title IX Statement
+
+instructor_ref:
+  id: "brian-steele" # must match whatever you use in 02_instructor.yml
+  override_office_hours: [] # optional per-section tweaks

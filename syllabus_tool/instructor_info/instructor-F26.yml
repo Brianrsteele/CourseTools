@@ -1,0 +1,16 @@
+instructor:
+  id: brian-steele
+  name: Brian Steele
+  email: brian.steele@rctc.edu
+  office: EA 222
+  phone: 507-536-5608
+  contact_notes: |
+    The best way to reach me is by email. I will do my best to get back to you by the end of the next working day (Monday-Friday). I may not answer emails on weekends or official holidays.
+  office_hours:
+    monday: "12:00 p.m. - 2:00 p.m."
+    tuesday: "12:00 p.m. - 2:00 p.m."
+    wednesday: "12:00 p.m. - 2:00 p.m."
+    thursday: "-"
+    friday: "-"
+    note: "I am available in my office to meet with students during these hours. Please email me before you come to my office, so I know to expect you. I am also happy to meet with you on Zoom if you can't come to campus or set up a time to meet outside of those hours if they don't work for you. Please email me."
+voice_style: "Student Centered, FAQ style."

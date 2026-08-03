@@ -1,0 +1,7 @@
+- Graded work (quizzes, discussions, assignments, etc.) will have due dates published in the syllabus and D2L. It's important to follow the due dates to keep on track with the course.
+- Graded work may be handed in up to three days late. Late work may have a grade penalty applied.
+- In D2L, each item will have an "End Date" when the item will close and will no longer be available to hand in or do work.
+- I can open assignments that are past the end dates for extreme circumstances. Email me, and we can discuss the situation.
+- I will only open three assignments or quizzes that have closed for any given student. I will keep track in the D2L/Brightspace grades. Plan thoughtfully.
+- I will do my best to email your RCTC email account and let you know if you have missed a due date. Please check your RCTC email regularly.
+- D2L/Brightspace doesn't allow me to open discussions for individual students, so I won't do that.

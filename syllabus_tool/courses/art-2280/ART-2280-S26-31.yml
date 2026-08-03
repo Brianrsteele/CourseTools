@@ -1,0 +1,298 @@
+course:
+  id: ART-2280-S26-31 # OPTIONAL – e.g. "ART-1184-F25-01"
+  semester: Spring # REQUIRED – "Fall", "Spring", etc.
+  year: 2026 # REQUIRED – e.g. 2025
+  section: 31 # REQUIRED – e.g. "01"
+  modality: hybrid # REQUIRED – "in-person" | "online" | "hybrid"
+
+  course_number: 2280
+  department: ART
+  course_title: Photography II
+  course_number_and_title: ART 2280 - Photography II # REQUIRED – e.g. "ART 1184 – Photography I"
+  credits: 3
+  hours: "5 hours/week (1 lecture, 4 lab)" # REQUIRED – e.g. "3 credits, 6 hours/week (2 lecture, 4 lab)"
+
+  meeting_times: # REQUIRED for in-person/synchronous
+    days: "Wednesday" # e.g. "Mon/Wed"
+    time: 10:00 a.m. - 11:50 a.m. # e.g. "10:00–11:50 a.m."
+  classroom: Singley Hall 203 # OPTIONAL for fully online; REQUIRED otherwise
+
+  catalog_description: |
+    This course expands on skills covered in ART 1184. Instruction will include digital photography best practices, the fine digital print, and the creation of an extended body of related images. Assignments will direct students toward personal expression in digital photography. Media presentations, discussion, and studio critiques will address photographic theory and history, interpretation and analysis.
+  prerequisites: "ART 1184"
+  major_content_outline: |
+    1. Contemporary photographers and photographic theory
+    2. Digital photography best practices
+    3. The fine print
+    4. Creating an extended body of work collected in a photographic portfolio
+  course_learning_outcomes: |
+    1. Capture, process and manipulate digital photographs using contemporary best practices.
+    2. Create fine photographic prints using digital output technologies, culminating in an extended body of expressive photographic work related to a single theme or idea of personal significance.
+    3. Articulate an informed personal reaction to photographs through critique.
+    4. Identify important contemporary and historical art photographers, articulate contemporary concerns in art photography and current events regarding photography.
+
+  am_i_ready: |
+    The only prerequisite for this course is successful completion of ART 1184. Students enter this course with a wide range of experience levels, technical comfort, and confidence, and that is expected. This course is designed for growth. No one is expected to have everything figured out on the first day, and progress over the semester matters more than where you begin. Planning, consistent work, and clear communication are far more important than any idea of innate talent.
+  how_course_works: |
+    This course functions as an active photography studio. The focus is on applying current digital photography best practices to create, refine, and print an extended body of expressive photographic work. You will learn by making photographs regularly, evaluating results, and revising your approach over time. Expect weekly image-making, overlapping assignments, and structured critique. Printing is a core part of the course, not an afterthought, and don't be surprised if it takes a lot longer than you expect. Starting early on projects, especially printing, is a good idea. If something isn’t working or you begin to fall behind, address it early. Communicating questions and seeking feedback is a professional habit, not a sign of failure.
+  mntc_goals: "This course meets no MnTC goals."
+  rctc_core_outcomes:
+    - Critical Thinking
+
+  required_materials:
+    camera: ["DSLR or mirrorless camera with manual controls and RAW support"] # e.g. ["DSLR with manual controls and RAW support"]
+    software:
+      - "Adobe Lightroom Classic, license provided by student fees already. Please note that this is different software than you used in Photography I." # e.g. ["Adobe Lightroom"]
+    textbooks:
+      - "_The Elements of Photography: Understanding and Creating Sophisticated Images_, by Angela Faris Belt" # list of texts or ["None"]
+    fees: [
+        "$20 Course Fee for home and campus computer lab Adobe Creative Cloud software. RCTC already charged this to your student account so you don't need to pay Adobe for the software.",
+      ] # e.g. ["Studio fee $20"]
+    other: # SD cards, drives, etc.
+      - A hard drive will be provided
+      - SD cards recommended
+      - RCTC will provide Luster paper. If you prefer a different surface for your final portfolio, you will need to purchase it.
+
+  grading_system: Each assignment will be provided with a rubric in D2L/Brightspace. # REQUIRED – narrative of how grades work
+  grading_type: weighted_percent
+  assessment_structure:
+    summary: D2L will add up your assignment results in the online gradebook and compute a percentage score for your work. I will use the standard RCTC grade scale to figure out the letter grade. Please note that RCTC doesn’t use pluses or minuses for final grades.
+    assessments:
+      - id: "final_project_body_of_work"
+        code: FP
+        label: "Final Project: Extended Body of Work"
+        kind: project
+        module: "Course Orientation; Lightroom Classic Workflow; What Is a Cohesive Body of Work?"
+        points: 4
+      - id: "printed_selfie"
+        code: E1
+        label: "Printed Selfie"
+        kind: exercise
+        module: "Course Orientation; Lightroom Classic Workflow; What Is a Cohesive Body of Work?"
+        points: 6.67
+      - id: "exposure_exercise"
+        code: E2
+        label: "Exposure Exercise"
+        kind: exercise
+        module: "Metering, Exposure Review; File Management; First Work Prints"
+        points: 6.67
+      - id: "contact_sheet_edit"
+        code: P1
+        label: "Printed Contact Sheet"
+        kind: project
+        module: "Framing and Contact Sheets; Editing as Selection"
+        points: 4
+      - id: "framing_variation_project"
+        code: P2
+        label: Framing Variation Project
+        kind: project
+        module: "Borders, Cropping, and the Edge of the Image"
+        points: 4
+      - id: "focus_aperture_project"
+        code: P3
+        label: "Focus and Aperture Project"
+        kind: project
+        module: "Aperture, Focus, and Visual Clarity"
+        points: 4
+      - id: "motion_time_project"
+        code: P4
+        label: Motion and Time Project
+        kind: project
+        module: "Shutter Speed, Motion, and Time"
+        points: 4
+      - id: "sequence_exercise"
+        code: E3
+        label: Sequencing Exercise
+        kind: exercise
+        module: "Multiple Moments; Sequencing Time"
+        points: 6.67
+      - id: "develop_module_consistency_exercise"
+        code: E4
+        label: Develop Module Consistency Exercise
+        kind: exercise
+        module: "Ch. 6 — Materials, Processes, and Presentation (Part 1)"
+        points: 6.67
+      - id: "paper_test_prints"
+        code: P5
+        label: Paper Test Prints
+        kind: project
+        module: "Image Scale; Paper Types; Why Print Choices Matter"
+        points: 4
+      - id: "mini_sequence_prints"
+        code: P6
+        label: Mini Sequence Prints
+        kind: project
+        module: "Aggregate Image; Building Meaning Across Images"
+        points: 4
+      - id: "portfolio_direction_statement"
+        code: E5
+        label: Portfolio Direction Statement
+        kind: exercise
+        module: "Ch. 6 — Final Presentation in the Gallery"
+        points: 6.67
+      - id: "final_project_plan"
+        code: E6
+        label: Final Project Plan
+        kind: exercise
+        module: "Final Project Planning; Sequencing and Refinement"
+        points: 6.67
+      - id: "portfolio_printing_round_1"
+        code: P7
+        label: Portfolio Printing Round 1
+        kind: project
+        module: "Portfolio Printing I; Process to Commitment"
+        points: 4
+      - id: "portfolio_printing_round_2"
+        code: P8
+        label: Portfolio Printing Round 2
+        kind: project
+        module: "Portfolio Printing II; Refinement and Reprints"
+        points: 4
+      - id: "final_portfolio_sequence"
+        code: P9
+        label: "Final Portfolio Sequencing"
+        kind: project
+        module: "Sequencing, Critique, and Final Adjustments"
+        points: 4
+      - id: "final_portfolio_submission"
+        code: P10
+        label: Final Portfolio Submission and Critique
+        kind: project
+        module: "Final Portfolio Submission and Critique"
+        points: 4
+      - id: "week_1_discussion"
+        code: D1
+        label: "Week 1 Discussion"
+        kind: discussion
+        module: "Course Orientation; Lightroom Classic Workflow; What Is a Cohesive Body of Work?"
+        points: 0.8
+      - id: "week_2_discussion"
+        code: D2
+        label: "Week 2 Discussion"
+        kind: discussion
+        module: "Metering, Exposure Review; File Management; First Work Prints"
+        points: 0.8
+      - id: "week_3_discussion"
+        code: D3
+        label: "Week 3 Discussion"
+        kind: discussion
+        module: "Framing and Contact Sheets; Editing as Selection"
+        points: 0.8
+      - id: "week_4_discussion"
+        code: D4
+        label: "Week 4 Discussion"
+        kind: discussion
+        module: "Borders, Cropping, and the Edge of the Image"
+        points: 0.8
+      - id: "week_5_discussion"
+        code: D5
+        label: "Week 5 Discussion"
+        kind: discussion
+        module: "Aperture, Focus, and Visual Clarity"
+        points: 0.8
+      - id: "week_6_discussion"
+        code: D6
+        label: "Week 6 Discussion"
+        kind: discussion
+        module: "Shutter Speed, Motion, and Time"
+        points: 0.8
+      - id: "week_7_discussion"
+        code: D7
+        label: "Week 7 Discussion"
+        kind: discussion
+        module: "Multiple Moments; Sequencing Time"
+        points: 0.8
+      - id: "week_8_discussion"
+        code: D8
+        label: "Week 8 Discussion"
+        kind: discussion
+        module: "Develop Module Deep Dive; Consistency and Tone"
+        points: 0.8
+      - id: "week_9_discussion"
+        code: D9
+        label: "Week 9 Discussion"
+        kind: discussion
+        module: "Image Scale; Paper Types; Why Print Choices Matter"
+        points: 0.8
+      - id: "week_10_discussion"
+        code: D10
+        label: "Week 10 Discussion"
+        kind: discussion
+        module: "Aggregate Image; Building Meaning Across Images"
+        points: 0.8
+      - id: "week_11_discussion"
+        code: D11
+        label: "Week 11 Discussion"
+        kind: discussion
+        module: "Ch. 6 — Final Presentation in the Gallery"
+        points: 0.8
+      - id: "week_12_discussion"
+        code: D12
+        label: "Week 12 Discussion"
+        kind: discussion
+        module: "Final Project Planning; Sequencing and Refinement"
+        points: 0.8
+      - id: "exam_1"
+        code: ME1
+        label: "Mid-Term Exam 1 (Ch. 1 - 3)"
+        kind: exam
+        module: "Shutter Speed, Motion, and Time"
+        points: 10
+      - id: "exam_2"
+        code: ME2
+        label: "Mid-Term Exam 2 (Ch. 4 - 6)"
+        kind: exam
+        module: "Presentation Contexts; Gallery Thinking"
+        points: 10
+
+    components:
+      - id: "projects"
+        label: "Projects"
+        weight_percent: 40
+      - id: "discussions"
+        label: "Discussions"
+        weight_percent: 15
+      - id: "exercises"
+        label: "Exercises"
+        weight_percent: 25
+      - id: "exams"
+        label: "Exams"
+        weight_percent: 20
+
+  chart_image:
+    path: "ART-2280-S26-grades.png" # relative to the syllabus file or project root
+    alt: "Pie chart showing grade breakdown for ART 2280"
+    caption: "Figure 1. Grade breakdown by assessment category."
+
+  what_matters_grade: |
+    Projects and exercises make up the majority of the course grade, so consistent work and timely submission are essential. While not every project needs to be perfect, turning in thoughtful, complete work for each assignment gives you the best chance to succeed.
+
+  attendance_variant: "hybrid" # 'hybrid', 'online', or "in-person" – matches which FAQ block you intend to use
+
+  ai_policy_variant: "Generative AI Policy" # internal title in 01_policies.md
+
+  policies:
+    required_sections:
+      - Software Requirements
+      - Camera Checkout Policy
+      - Internet Access Requirements
+      - Computer Requirements
+      - Attendance Policy
+      - Late Work Policy
+      - Grading Overview
+      - Final Grade Calculation
+      - Assignment Grading Process
+      - Grading Turnaround Time
+      - Alternative Feedback Format
+      - Lab Access Policy
+      - RCTC Core Outcomes
+      - Course-Specific Academic Integrity Notes
+      - Generative AI Policy
+      - Academic Integrity Statement
+      - Americans with Disabilities Act
+      - Military Friendly Statement
+      - Title IX Statement
+
+instructor_ref:
+  id: "brian-steele" # must match whatever you use in 02_instructor.yml
+  override_office_hours: [] # optional per-section tweaks

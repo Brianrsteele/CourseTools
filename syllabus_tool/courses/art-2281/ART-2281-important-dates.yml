@@ -1,0 +1,219 @@
+---
+title: "ART 2281 - Important Dates, Spring 2026"
+course_id: "ART-2281-S26-31"
+source_of_truth: true
+term_ref: "S26"
+
+meeting_pattern:
+  days: ["Tuesday"]
+  time: "12:00-1:50 p.m."
+
+weekly_due_dates:
+  default_due_day: "Tuesday"
+  default_due_time: "11:59 a.m."
+
+weeks:
+  - kind: weekly_summary
+    week: 1
+    topic: "Orientation & The Big Picture"
+    readings:
+      - title: "What Portfolios Are For"
+    projects:
+      assigned:
+        - id: "portfolio"
+          due_week: 16
+    discussions:
+      - id: research_1
+        due_week: 1
+    exams: []
+  - kind: weekly_summary
+    week: 2
+    topic: "Direction, Not Decisions"
+    readings:
+      - title: "Bodies of Work & Coherence"
+    projects:
+      assigned:
+        - id: "bodies_of_work_1"
+          due_week: 2
+    discussions:
+      - id: research_2
+        due_week: 2
+    exams: []
+  - kind: weekly_summary
+    week: 3
+    topic: "Feasibility & Planning"
+    readings:
+      - title: "Audience, Voice, and Professional Tone"
+    projects:
+      assigned:
+        - id: "portfolio_1"
+          due_week: 3
+    discussions:
+      - id: research_3
+        due_week: 3
+    exams: []
+  - kind: weekly_summary
+    week: 4
+    topic: "Documentation as a Professional Skill"
+    readings:
+      - title: "Documenting Artwork"
+    projects:
+      assigned:
+        - id: "documentation"
+          due_week: 6
+    discussions:
+      - id: research_4
+        due_week: 4
+    exams: []
+  - kind: weekly_summary
+    week: 5
+    topic: "Writing to Think (Statements)"
+    readings:
+      - title: "Writing About Work: Artist Statements"
+    projects:
+      assigned:
+        - id: "artists_statement_1"
+          due_week: 5
+    discussions:
+      - id: research_5
+        due_week: 5
+    exams: []
+  - kind: weekly_summary
+    week: 6
+    topic: "Professional Identity (CV/Resume)"
+    readings:
+      - title: "CVs & Resumes for Artists"
+    projects:
+      assigned:
+        - id: "resume_1"
+          due_week: 8
+    discussions:
+      - id: research_6
+        due_week: 6
+    exams: []
+  - kind: weekly_summary
+    week: 7
+    topic: "Editing, Sequencing, Coherence"
+    readings:
+      - title: "Editing, Sequencing, and Scale"
+    projects:
+      assigned:
+        - id: "bodies_of_work_2"
+          due_week: 7
+    discussions:
+      - id: research_7
+        due_week: 7
+    exams: []
+  - kind: weekly_summary
+    week: 8
+    topic: "Mid-Semester Reset & Revision"
+    readings:
+      - title: "Rejection, Feedback, and Resilience"
+    projects:
+      assigned:
+        - id: "revisions_1"
+          due_week: 8
+    discussions:
+      - id: research_8
+        due_week: 8
+    exams: []
+  - kind: weekly_summary
+    week: 9
+    topic: "Portfolios in Use: Applications"
+    readings:
+      - title: "Submitting Work: Exhibitions & Opportunities"
+    projects:
+      assigned:
+        - id: "applications"
+          due_week: 9
+    discussions:
+      - id: research_9
+        due_week: 9
+    exams: []
+  - kind: weekly_summary
+    week: 10
+    topic: "Digital Portfolio Foundations"
+    readings:
+      - title: "Portfolio Websites & Online Presence"
+    projects:
+      assigned: []
+    discussions:
+      - id: research_10
+        due_week: 10
+    exams: []
+  - kind: weekly_summary
+    week: 11
+    topic: "Optional Platforms & Visibility"
+    readings:
+      - title: "Social Media as a Portfolio Tool (and Its Limits)"
+    projects:
+      assigned:
+        - id: "ecosystem"
+          due_week: 11
+    discussions:
+      - id: research_11
+        due_week: 11
+    exams: []
+  - kind: weekly_summary
+    week: 12
+    topic: "Local Contexts & Art Ecosystems"
+    readings:
+      - title: "Paths Forward: Education, Grants, & Opportunities"
+    projects:
+      assigned:
+        - id: "revisions_2"
+          due_week: 12
+    discussions:
+      - id: research_12
+        due_week: 12
+    exams: []
+  - kind: weekly_summary
+    week: 13
+    topic: "Synthesis & Final Writing"
+    readings:
+      - title: "Four-Year School Pathways & Transfer Options"
+    projects:
+      assigned: []
+    discussions:
+      - id: research_13
+        due_week: 13
+    exams: []
+  - kind: weekly_summary
+    week: 14
+    topic: "Portfolio-in-Use Presentations"
+    readings:
+      - title: "Audience, Voice, and Professional Tone (revisited)"
+    projects:
+      assigned:
+        - id: "presentation"
+          due_week: 14
+    discussions:
+      - id: research_14
+        due_week: 14
+    exams: []
+  - kind: weekly_summary
+    week: 15
+    topic: "Professional Assembly & Documentation"
+    readings:
+      - title: "Applied research: captions, metadata, documentation standards"
+    projects:
+      assigned:
+        - id: "catalog"
+          due_week: 15
+    discussions:
+      - id: research_15
+        due_week: 15
+    exams: []
+  - kind: weekly_summary
+    week: 16
+    topic: "Reflection & Durability"
+    readings:
+      - title: "Rejection, Feedback, and Resilience (revisited)"
+    projects:
+      assigned:
+        - id: "fp"
+          due_week: 16
+    discussions:
+      - id: research_16
+        due_week: 16
+    exams: []

@@ -1,0 +1,382 @@
+course:
+  id: ART-1184-F26-01 # OPTIONAL – e.g. "ART-1184-F25-01"
+  semester: Fall # REQUIRED – "Fall", "Spring", etc.
+  year: 2026 # REQUIRED – e.g. 2025
+  section: "01" # REQUIRED – e.g. "01"
+  modality: in-person # REQUIRED – "in-person" | "online" | "Hybrid"
+
+  course_number: 1184
+  department: ART
+  course_title: Photography I
+  course_number_and_title: ART 1184 - Photography I # REQUIRED – e.g. "ART 1184 – Photography I"
+  credits: 3 credits
+  hours: 5 hours/week (1 lecture, 4 lab) # REQUIRED – e.g. "3 credits, 6 hours/week (2 lecture, 4 lab)"
+
+  meeting_times: # REQUIRED for in-person/synchronous
+    days: Mondays/Wednesdays # e.g. "Mon/Wed"
+    time: 10:00 a.m. - 11:50 a.m. # e.g. "10:00–11:50 a.m."
+  classroom: Singley Hall 203 # OPTIONAL for fully online; REQUIRED otherwise
+  catalog_description: |
+    This course is an introduction to creative digital photography. Students will make photographs that explore fundamental compositional strategies using digital cameras and editing software. Instruction will include the exploration of photographic concepts through media presentations, group discussions, and video tutorials. Additional instruction will cover the history of photography, and computer techniques. Students will learn to interpret and analyze images, including student work through classroom critiques and discussions.
+  prerequisites: []
+  major_content_outline: |
+    1. Camera, Lens, and Exposure Techniques
+    2. Aesthetics and Composition
+    3. Processing Images using digital applications
+    4. Cultural Investigation and history of Photography
+    5. Interpretation and analysis of photography
+  course_learning_outcomes: |
+    1. Demonstrate a knowledge of the elements of art and the principles of design in photographic compositions.
+    2. Demonstrate skill and technical knowledge with camera controls, digital imaging software and presentation.
+    3. Identify significant photographers and important photographic movements.
+    4. Articulate an informed personal reaction to technical and aesthetic concerns when viewing photographs.
+  am_i_ready: |
+    There are no courses you are required to take before enrolling in this class. Students come to Photography I with a wide range of experience—some have never used a dedicated camera before, and others have been taking photographs for years. This course is designed to work for all of those students.
+
+    The most important part of this course is growth. You will be learning new skills, and you should expect to spend time outside of class practicing, studying examples, and making photographs. That is normal for a college-level studio art course.
+
+    Anyone can learn these skills with practice and effort. Some assignments may take more time than you expect at first, especially early in the semester, and that's okay. If you stay engaged, ask questions, and keep working, you can be successful in this course.
+  how_course_works: |
+    This is an art studio course that emphasizes the active production of photographic images. Learning in this course happens through making photographs, not just reading or watching demonstrations. Regular attendance and consistent time spent working with a camera and computer are essential. You should expect to make photographs every week. Assignments may overlap. We will be working together on critiques and exploring photographs, including student work. If you are struggling, confused, or falling behind, ask early. Seeking clarification and support is a sign of professionalism, not failure.
+  mntc_goals: |
+    Goal 6/Humanities – the Arts, Literature, and Philosophy: The student will be able to:
+    - Understand works as expressions of individual and human values within a historical and social context.
+    - Engage in the creative process or interpretive performance.
+    - Articulate an informed personal reaction to works in the arts and humanities.
+  rctc_core_outcomes:
+    - Critical Thinking
+  required_materials:
+    camera: [
+        "Interchangeable-lens digital camera with manual controls and RAW file support (phone cameras are not sufficient for this course)",
+        "Look for information about checking out a camera on D2L/Brightspace or in class if you are in an in-person section",
+      ] # e.g. ["DSLR with manual controls and RAW support"]
+    software: ["Adobe Lightroom (license provided through student fees)"] # e.g. ["Adobe Lightroom"]
+    computer: |
+      For this section, you need to have a computer that meets the minimum requirements to run Adobe Lightroom. You can see the requirements at https://helpx.adobe.com/creative-cloud/system-requirements.html
+
+      **Windows:**
+
+      - Intel® or AMD processor with 64-bit and SSE 4.2 support; 2 GHz or faster processor
+      - Runs Microsoft Windows 10 or Windows 11
+      - 8 GB of RAM minimum/16 GB recommended
+      - 10 GB of hard drive space
+
+      **Mac:**
+
+      - Multicore Intel processor with 64-bit support or Apple silicon processor
+      - macOS 14 or later
+      - 8 GB of RAM minimum/16 GB recommended
+      - 10 GB of hard drive space
+      - The version of Lightroom we need to use will not work on iOS, Android, ChromeOS, Linux, or other operating systems. You will need a laptop or desktop running Windows 10, Windows 11, or macOS 14 or later.
+      - **Chromebooks will not work for this course.** There is a web-based version of Lightroom available for Photography I students, but you might be happier with the app version you install, and this won't install on a Chromebook. You cannot install any of the Creative Cloud applications (Lightroom, Photoshop, InDesign, etc) on a Chromebook.
+      - **Chromebooks managed by local schools often block important resources.** Many students report that they cannot access resources like LinkedIn Learning on school managed laptops, and you will need to access them to complete homework.
+      - **iPhones, iPads, and other tablets can install Lightroom, but may have other issues with assignments.** It can be a challenge to turn in work to D2L from those devices. There are many ways they are useful, though. Talk to me about using them before you use them for assignments.
+      - **Don't use camera wireless connections to your phone.** They degrade the quality of the image before sending it to your phone, the downloading is slow if you have a lot of images, and using a USB card reader attached to your computer is generally a better experience.
+      - **You will need an SD card reader for your computer**. Many computers have them built in already. If you check out a camera from the art department, we will provide a card reader. You can pick one up at Target, Walmart, or Amazon.
+      - For students who do not have an appropriate computer at home, RCTC’s Technology Support Center has some laptops available for checkout for the semester. You can find information at https://www.rctc.edu/services/technology/tsc/, call 507–536–5555, 1–800–247–1296 / TTY Relay 1–800–627–3529, or email tech.help@rctc.edu.
+
+    textbooks:
+      - "There is no required textbook for the course."
+      - "You will be required to watch several hours of online videos from LinkedIn Learning instead of using a textbook."
+      - "There will be short quizzes based on the videos."
+        # list of texts or ["None"]
+    fees: [
+        "A $20 course fee for access to Adobe software has already been charged to your student account. Please do not pay additional fees directly to Adobe. Contact your instructor if you have questions about software access.",
+      ] # e.g. ["Studio fee $20"]
+    other: ["An SD card would be useful", "You will need an SD card reader"] # SD cards, drives, etc.
+  grading_system: Each assignment will be provided with a rubric in D2L/Brightspace. # REQUIRED – narrative of how grades work
+  grading_type: points
+  assessment_structure:
+    summary: D2L will add up your points in the online grade book and compute a percentage score for the points you have earned. I will use the standard RCTC grade scale to figure out the letter grade. Please note that RCTC doesn’t use pluses or minuses for final grades.
+    assessments:
+      - id: "syllabus_quiz"
+        code: Q1
+        label: "Syllabus Quiz"
+        kind: quiz
+        points: 2
+        module: "Start Here"
+      - id: "week_1_discussion"
+        code: D1
+        label: "Week 1 Discussion: Introductions"
+        kind: discussion
+        points: 1
+        module: "Start Here"
+      - id: "computer_quiz"
+        code: Q2
+        label: "Computer Quiz"
+        kind: quiz
+        points: 2
+        module: "Computer Literacy"
+      - id: "d2l_quiz"
+        code: Q3
+        label: "D2L/Brightspace, Email, and OneDrive Quiz"
+        kind: quiz
+        points: 2
+        module: "Computer Literacy"
+      - id: "computer_exercise"
+        code: E1
+        label: "Computer Exercise"
+        kind: exercise
+        points: 5
+        module: "Computer Literacy"
+      - id: "composition_1_quiz"
+        code: Q4
+        label: "Composition 1 Quiz"
+        kind: quiz
+        points: 2
+        module: "Computer Literacy"
+      - id: "week_2_discussion"
+        code: D2
+        label: "Week 2 Discussion"
+        kind: discussion
+        points: 1
+        module: "Computer Literacy"
+      - id: "camera_quiz"
+        code: Q5
+        label: "Camera Quiz"
+        kind: quiz
+        points: 2
+        module: "Cameras"
+      - id: "camera_worksheet"
+        code: E2
+        label: "Camera Exercise"
+        kind: exercise
+        points: 5
+        module: "Cameras"
+      - id: "importing_exporting_images"
+        code: E3
+        label: "Camera Exercise Worksheet Images"
+        kind: exercise
+        points: 5
+        module: "Cameras"
+      - id: "week_3_discussion"
+        code: D3
+        label: "Week 3 Discussion"
+        kind: discussion
+        points: 1
+        module: "Cameras"
+      - id: "importing_exporting_quiz"
+        code: Q6
+        label: "Lightroom Importing, Organizing, and Exporting Images Quiz"
+        kind: quiz
+        points: 2
+        module: "Lightroom I"
+      - id: "first_light_project"
+        code: P1
+        label: "First Light Project"
+        kind: project
+        points: 10
+        module: "Lightroom I"
+      - id: "week_4_discussion"
+        code: D4
+        label: "Week 4 Discussion"
+        kind: discussion
+        points: 1
+        module: "Lightroom I"
+      - id: "week_5_discussion"
+        code: D5
+        label: "Week 5 Discussion: First Light Project Critique"
+        kind: discussion
+        points: 1
+        module: "Lightroom I"
+      - id: "lenses_quiz"
+        code: Q7
+        label: "Lenses Quiz"
+        kind: quiz
+        points: 2
+        module: "Lenses"
+      - id: "reciprocity_quiz"
+        code: Q8
+        label: "Reciprocity Quiz (ungraded)"
+        kind: quiz
+        points: 0
+        module: "Lenses"
+      - id: "focal_length_exercise"
+        code: E4
+        label: "Focal Length Exercise"
+        kind: exercise
+        points: 5
+        module: "Lenses"
+      - id: "depth_of_field_exercise"
+        code: E5
+        label: "Depth of Field Exercise"
+        kind: exercise
+        points: 5
+        module: "Lenses"
+      - id: "week_6_discussion"
+        code: D6
+        label: "Week 6 Discussion: Focal Length and Depth of Field Critique"
+        kind: discussion
+        points: 1
+        module: "Lenses"
+      - id: "shutter_speed_quiz"
+        code: Q9
+        label: "Shutter Speed Quiz"
+        kind: quiz
+        points: 2
+        module: "Shutters"
+      - id: "week_7_discussion"
+        code: D7
+        label: "Week 7 Discussion: Shutter Speed Critique"
+        kind: discussion
+        points: 1
+        module: "Shutters"
+      - id: "composition_2_quiz"
+        code: Q10
+        label: "Composition 2 Quiz"
+        kind: quiz
+        points: 2
+        module: "Shutters"
+      - id: "shutter_speed_exercise"
+        code: E6
+        label: "Shutter Speed Exercise"
+        kind: exercise
+        points: 5
+        module: "Shutters"
+      - id: "depth_blur_project"
+        code: P2
+        label: "Depth-Blur Project"
+        kind: project
+        points: 10
+        module: "Shutters"
+      - id: "week_8_discussion"
+        code: D8
+        label: "Week 8 Discussion: Depth-Blur Critique"
+        kind: discussion
+        points: 1
+        module: "Shutters"
+      - id: "correcting_images_quiz_1"
+        code: Q11
+        label: "Correcting Images Part 1 Quiz"
+        kind: quiz
+        points: 2
+        module: "Lightroom II"
+      - id: "correcting_images_quiz_2"
+        code: Q12
+        label: "Correcting Images Part 2 Quiz"
+        kind: quiz
+        points: 2
+        module: "Lightroom II"
+      - id: "composition_3_quiz"
+        code: Q13
+        label: "Composition 3 Quiz"
+        kind: quiz
+        points: 2
+        module: "Lightroom II"
+      - id: "correcting_images_exercise"
+        code: E7
+        label: "Correcting Images Exercise"
+        kind: exercise
+        points: 5
+        module: "Lightroom II"
+      - id: "image_analysis_paper"
+        code: P3
+        label: "Image Analysis Paper"
+        kind: project
+        points: 10
+        module: "Lightroom II"
+      - id: "week_9_discussion"
+        code: D9
+        label: "Week 9 Discussion"
+        kind: discussion
+        points: 1
+        module: "Lightroom II"
+      - id: "week_10_discussion"
+        code: D10
+        label: "Week 10 Discussion: Correcting Images Critique"
+        kind: discussion
+        points: 1
+        module: "Lightroom II"
+      - id: "point_of_view_project"
+        code: P4
+        label: "Point of View Project"
+        kind: project
+        points: 10
+        module: "Point of View"
+      - id: "week_11_discussion"
+        code: D11
+        label: "Week 11 Discussion: Point of View Critique"
+        kind: discussion
+        points: 1
+        module: "Point of View"
+      - id: "portrait_and_lighting_quiz"
+        code: Q14
+        label: "Portraits and Lighting Quiz"
+        kind: quiz
+        points: 2
+        module: "Portraits"
+      - id: "four_kinds_of_light_portraits_project"
+        code: P5
+        label: "Four Kinds of Light Portraits Project"
+        kind: project
+        points: 10
+        module: "Portraits"
+      - id: "week_12_discussion"
+        code: D12
+        label: "Week 12 Discussion: Four Kinds of Light Portraits Critique"
+        kind: discussion
+        points: 1
+        module: "Portraits"
+      - id: "final_project"
+        code: P6
+        label: "Final Project"
+        kind: project
+        points: 20
+        module: "Final Project"
+      - id: "week_13_discussion"
+        code: D13
+        label: "Week 13 Discussion"
+        kind: discussion
+        points: 1
+        module: "Final Project"
+      - id: "week_14_discussion"
+        code: D14
+        label: "Week 14 Discussion"
+        kind: discussion
+        points: 1
+        module: "Final Project"
+      - id: "week_15_discussion"
+        code: D15
+        label: "Week 15 Discussion"
+        kind: discussion
+        points: 1
+        module: "Final Project"
+      - id: "week_16_discussion"
+        code: D16
+        label: "Week 16 Discussion: Final Project Critique"
+        kind: discussion
+        points: 1
+        module: "Final Project"
+  chart_image:
+    path: "ART-1184-F26-grades.png" # relative to the syllabus file or project root
+    alt: "Pie chart showing grade breakdown for ART 1184"
+    caption: "Figure 1. Grade breakdown by assessment category."
+  what_matters_grade: |
+    The bulk of the points in this course come from exercises and projects. If an assignment asks you to use your camera, it is very important that you turn something in on time. Please note that my grading rubrics are forgiving, and you can get some points for handing in any work for a project or exercise. Participation in class or online discussions also contributes to your grade. The quizzes and papers matter to doing well, but are not as large a part of the grade as exercises and projects. It's also important to remember that the skills from the quizzes and projects build on one another. If you miss several quizzes, exercises, or projects, you may find that later assignments may feel much harder.
+  attendance_variant: "in-person" # or "in-person" – matches which FAQ block you intend to use
+  ai_policy_variant: "Generative AI Policy" # internal title in 01_policies.md
+  policies:
+    required_sections:
+      - Software Requirements
+      - Camera Checkout Policy
+      - Internet Access Requirements
+      - Computer Requirements
+      - Attendance Policy
+      - Late Work Policy
+      - Grading Overview
+      - Final Grade Calculation
+      - Assignment Grading Process
+      - Grading Turnaround Time
+      - Alternative Feedback Format
+      - Lab Access Policy
+      - RCTC Core Outcomes
+      - Course-Specific Academic Integrity Notes
+      - Generative AI Policy
+      - Academic Integrity Statement
+      - Americans with Disabilities Act
+      - Military Friendly Statement
+      - Title IX Statement
+
+instructor_ref:
+  id: "brian-steele" # must match whatever you use in instructor.yml
+  override_office_hours: [] # optional per-section tweaks

@@ -1,0 +1,8 @@
+- This class is presented as a hybrid course. There are in person and online parts of the course. These are the hybrid attendance policies.
+- Because demonstrations and critiques happen in real time, missing in person class sessions often means missing skills that are difficult to make up independently.
+- Students must participate in at least one graded activity every two weeks — a quiz, a discussion/sketches, or an assignment.
+- Students who have not completed a graded activity in the last two weeks will be given an FW for a course grade, which will also withdraw them from the course.
+- This policy is a request of the RCTC administration. Students who are dropped early in the semester with an FW can sometimes get tuition money back for the course.
+- If you miss more than three weeks of class sessions, your final grade will be reduced by one letter grade for each additional class session missed. I will keep track of attendance in D2L so you can check your current absences.
+- If you’re facing challenges that may impact your attendance, please reach out so we can discuss how to keep you on track.
+- If you find yourself missing class regularly, that’s a signal to reach out early.

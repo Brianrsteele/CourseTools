@@ -1,0 +1,255 @@
+---
+title: "ART 2286 - Important Dates, Spring 2026"
+course_id: "ART-2286-S26-31"
+source_of_truth: true
+term_ref: "S26"
+
+meeting_pattern:
+  days: ["Tuesday"]
+  time: "4:00-6:40 p.m."
+
+weekly_due_dates:
+  default_due_day: "Sunday"
+  default_due_time: "11:59 p.m."
+
+weeks:
+  - kind: weekly_summary
+    week: 1
+    topic: "Getting Started; Foundations of Light; Hot Light Demo"
+    readings:
+      - title: "Ch. 1 — Light"
+    projects:
+      assigned:
+        - id: "fsl"
+          due_week: 3
+    discussions:
+      - id: week_1_discussion
+        due_week: 1
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 2
+    topic: "Portrait Lighting Patterns; Metering Practice"
+    readings:
+      - title: "Ch. 2 — Shadows, Shapes, & Multiple Sources"
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_2_discussion
+        due_week: 2
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 3
+    topic: "Reflective Surfaces; Tabletop Prep"
+    readings:
+      - title: "Ch. 3 — Reflective Surfaces"
+    projects:
+      assigned:
+        - id: "tsl"
+          due_week: 6
+    discussions:
+      - id: week_3_discussion
+        due_week: 3
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 4
+    topic: "Transparent Objects; Advanced Tabletop"
+    readings:
+      - title: "Ch. 4 — Transparent Objects"
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_4_discussion
+        due_week: 4
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 5
+    topic: "Studio Work + Review"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_5_discussion
+        due_week: 5
+    exams:
+      - id: me1
+        due_week: 5
+
+  - kind: weekly_summary
+    week: 6
+    topic: "Light Measurement & Color Temperature"
+    readings:
+      - title: "Ch. 5 — Light Measurement & Color Temperature"
+    projects:
+      assigned:
+        - id: "ssp"
+          due_week: 10
+    discussions:
+      - id: week_6_discussion
+        due_week: 6
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 7
+    topic: "Light Sources; Strobe Workflow"
+    readings:
+      - title: "Ch. 6 — Light Sources"
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_7_discussion
+        due_week: 7
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 8
+    topic: "Modifiers & Accessories; Style Development"
+    readings:
+      - title: "Ch. 7 — Modifiers & Accessories"
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_8_discussion
+        due_week: 8
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 9
+    topic: "Studio Work + Review 2"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_9_discussion
+        due_week: 9
+    exams:
+      - id: me2
+        due_week: 9
+
+  - kind: weekly_summary
+    week: 10
+    topic: "Portrait Lighting (Advanced)"
+    readings:
+      - title: "Ch. 8 — Portrait"
+    projects:
+      assigned:
+        - id: "folp"
+          due_week: 12
+    discussions:
+      - id: week_10_discussion
+        due_week: 10
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 11
+    topic: "On-Location Lighting; Mixing Ambient & Flash"
+    readings:
+      - title: "Review only"
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions:
+      - id: week_11_discussion
+        due_week: 11
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 12
+    topic: "Final Project Planning + Mini-Critiques"
+    readings: []
+    projects:
+      assigned:
+        - id: "fp"
+          due_week: []
+    discussions:
+      - id: week_12_discussion
+        due_week: 12
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 13
+    topic: "Final Project Work Time"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions: []
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 14
+    topic: "Printing Demo & Test Prints"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions: []
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 15
+    topic: "Portfolio Refinement & Conferences"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions: []
+    exams:
+      - id: []
+        due_week: []
+
+  - kind: weekly_summary
+    week: 16
+    topic: "Final Critique & Wrap-Up"
+    readings: []
+    projects:
+      assigned:
+        - id: []
+          due_week: []
+    discussions: []
+    exams:
+      - id: []
+        due_week: []

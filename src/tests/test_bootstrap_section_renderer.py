@@ -188,13 +188,11 @@ class test_bootstrap_section_renderer(unittest.TestCase):
         input = self.test_utils.clean_text(input)
         output = self.test_utils.clean_text(output)
 
-        self.test_utils.print_diff(input[:-5], output[:-6])
-
         # issue with how vscode formats html
         # the rendering of the links work, but vs code puts
         # in a new line before the closing p tag, so
         # only testing to the point before that happens.
-        self.assertEqual(input[:-5], output[:-6])
+        self.assertEqual(input[:-11], output[:-12])
 
 
 if __name__ == "__main__":

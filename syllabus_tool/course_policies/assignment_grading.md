@@ -1,0 +1,1 @@
+Each assignment will have a grading rubric in D2L/Brightspace. You should read the rubric before starting your assignment. The grading rubric will break down, point by point, what I am looking for in the assignment. I will post grades on D2L/Brightspace.

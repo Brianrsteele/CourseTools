@@ -1,0 +1,210 @@
+course:
+  id: ART-2286-S26-31 # OPTIONAL – e.g. "ART-1184-F25-01"
+  semester: Spring # REQUIRED – "Fall", "Spring", etc.
+  year: 2026 # REQUIRED – e.g. 2025
+  section: 31 # REQUIRED – e.g. "01"
+  modality: Hybrid # REQUIRED – "in-person" | "online" | "Hybrid"
+
+  course_number: 2286
+  department: ART
+  course_title: Photo Lighting Techniques
+  course_number_and_title: ART 2286 - Photo Lighting Techniques # REQUIRED – e.g. "ART 1184 – Photography I"
+  credits: 3 credits
+  hours: 5 hours/week (1 lecture, 4 lab) # REQUIRED – e.g. "3 credits, 6 hours/week (2 lecture, 4 lab)"
+
+  meeting_times: # REQUIRED for in-person/synchronous
+    days: Tuesdays # e.g. "Mon/Wed"
+    time: 4:00 p.m. - 6:40 p.m. # e.g. "10:00–11:50 a.m."
+  classroom: M1408 # OPTIONAL for fully online; REQUIRED otherwise
+
+  catalog_description: |
+    This course emphasizes artificial photographic lighting as a creative and practical means to create images for artistic and commercial purposes. Studio, strobe, and off-camera flash will be introduced to photograph a variety of subject matter including: still life, portraiture, tabletop, and on-location environments. Media presentations, video tutorials, discussions, and studio critiques will address photographic technique, theory and history, interpretation and analysis. Students will work in groups in the photo studio to produce work throughout the semester. # REQUIRED – from CCO
+  prerequisites: ART 1184
+  major_content_outline: |
+    1. Theory and History of Artificial Light in Photography
+    2. Fine Art and Commercial Applications of Composing Photographic Images with Light
+    3. Techniques for Working with Artificial Light
+    4. Professionalism in a Lighting Studio
+  course_learning_outcomes: |
+    1. Apply an aesthetically effective use of light in the creation and presentation of photographic images using
+      artificial light with a variety of subject matter and styles.
+    2. Demonstrate fundamental photographic and digital skills with a variety of artificial lighting systems, set ups
+      and digital imaging software.
+    3. Articulate an informed personal reaction to photographs through critique.
+    4. Identify how light has been used in contemporary and historic art and photography, as it applies to making
+      photographic images.
+    5. Critically select and prepare a portfolio of quality digital prints using the principles and techniques of artificial
+      lighting.
+
+  am_i_ready: |
+    The only prerequisite for this course is successful completion of ART 1184. Students enter this course with a wide range of experience levels, technical comfort, and confidence, and that is expected. This course is designed for growth. No one is expected to have everything figured out on the first day, and progress over the semester matters more than where you begin. Planning, consistent work, and clear communication are far more important than any idea of innate talent.
+  how_course_works: |
+    This is an art studio course that emphasizes the active production of photographic images using artificial light sources. Learning in this course happens through making photographs, not just reading or watching demonstrations. Regular attendance and consistent time spent working in the lighting studio are essential. You should expect to make photographs every week. Assignments may overlap, and many projects will require collaboration with classmates. If you are struggling, confused, or falling behind, ask early. Seeking clarification and support is a sign of professionalism, not failure.
+
+  mntc_goals:
+    - "This course meets no MnTC goals."
+  rctc_core_outcomes:
+    - Critical Thinking
+
+  required_materials:
+    camera: [DSLR with manual controls and RAW support] # e.g. ["DSLR with manual controls and RAW support"]
+    software: [Adobe Lightroom, license provided by student fees already.] # e.g. ["Adobe Lightroom"]
+    textbooks:
+      - _Artificial Lighting for Photography_, by McKenzie # list of texts or ["None"]
+    fees: [
+        $20 Course Fee for home and campus computer lab Adobe Creative Cloud software has been charged to student account already.,
+      ] # e.g. ["Studio fee $20"]
+    other: [A hard drive will be provided, SD cards would be useful] # SD cards, drives, etc.
+
+  grading_system: Each assignment will be provided with a rubric in D2l/Brightspace. # REQUIRED – narrative of how grades work
+  grading_type: weighted_percent
+  assessment_structure:
+    summary: D2L will add up your points in the online grade book and compute a percentage score for the points you have earned. I will use the standard RCTC grade scale to figure out the letter grade. Please note that RCTC doesn’t use pluses or minuses for final grades.
+    assessments:
+      - id: fsl
+        code: P1
+        label: Foundations of Studio Light
+        kind: project
+        module: "Getting Started"
+      - id: week_1_discussion
+        code: D1
+        label: Zanele Muholi
+        kind: discussion
+        module: "Getting Started; Foundations of Light; Hot Light Demo"
+      - id: week_2_discussion
+        code: D2
+        label: Rotimi Fani-Kayode
+        kind: discussion
+        module: "Portrait Lighting Patterns"
+      - id: tsl
+        code: P2
+        label: Tabletop Still Life
+        kind: project
+        module: Reflective Surfaces
+      - id: week_3_discussion
+        code: D3
+        label: Barbara Kasten
+        kind: discussion
+        module: Reflective Surfaces
+      - id: week_4_discussion
+        code: D4
+        label: Laura Letinsky
+        kind: discussion
+        module: Transparent Objects
+      - id: me1
+        code: E1
+        label: Midterm Exam 1 (Ch. 1-4)
+        kind: exam
+        module: Studio Work + Review
+      - id: week_5_discussion
+        code: D5
+        label: Jessica Eaton
+        kind: discussion
+        module: Studio Work + Review
+      - id: ssp
+        code: P3
+        label: Studio Strobe Portrait
+        kind: project
+        module: Light Measurement & Color Temperature
+      - id: week_6_discussion
+        code: D6
+        label: Harold Edgerton
+        kind: discussion
+        module: Light Measurement and Color Temperature
+      - id: week_7_discussion
+        code: D&
+        label: Dawoud Bey
+        kind: discussion
+        module: Light Sources
+      - id: week_8_discussion
+        code: D8
+        label: Mickalene Thomas
+        kind: discussion
+        module: Modifiers & Accessories
+      - id: me2
+        code: E2
+        label: Midterm Exam 2 (Ch. 5-7)
+        kind: exam
+        module: Studio Work + Review 2
+      - id: week_9_discussion
+        code: D9
+        label: Nadia Lee Cohen
+        kind: discussion
+        module: Studio Work + Review 2
+      - id: folp
+        code: P4
+        label: Flash / On-Location Portrait
+        kind: project
+        module: Portrait Lighting (Advanced)
+      - id: week_10_discussion
+        code: D10
+        label: Tyler Mitchell
+        kind: discussion
+        module: Portrait Lighting (Advanced)
+      - id: week_11_discussion
+        code: D11
+        label: Deana Lawson
+        kind: discussion
+        module: On-Location Lighting
+      - id: fp
+        code: P5
+        label: Final Portfolio / Final Project
+        kind: project
+        module: Final Project Planning + Mini-Critiques
+      - id: week_12_discussion
+        code: D12
+        label: Paul Mpagi Sepuya
+        kind: discussion
+        module: Final Project Planning + Mini-Critiques
+
+    components:
+      - id: "projects"
+        label: "Projects"
+        weight_percent: 50
+      - id: "exams"
+        label: "Mid Term and Final Exams"
+        weight_percent: 20
+      - id: "discussions"
+        label: "Discussions"
+        weight_percent: 20
+      - id: "participation"
+        label: "Participation / Engagement"
+        weight_percent: 10
+
+  chart_image:
+    path: "ART-2286-S26-grades.png" # relative to the syllabus file or project root
+    alt: "Pie chart showing grade breakdown for ART 2286"
+    caption: "Figure 1. Grade breakdown by assessment category."
+
+  what_matters_grade: |
+    Projects make up roughly half of the total points for the course, so consistent work and timely submission are essential. While not every project needs to be perfect, turning in thoughtful, complete work for each assignment gives you the best chance to succeed.
+
+  attendance_variant: "in-person" # or "in-person" – matches which FAQ block you intend to use
+
+  ai_policy_variant: "Generative AI Policy" # internal title in 01_policies.md
+
+  policies:
+    required_sections:
+      - Software Requirements
+      - Camera Checkout Policy
+      - Internet Access Requirements
+      - Computer Requirements
+      - Attendance Policy
+      - Late Work Policy
+      - Grading Overview
+      - Final Grade Calculation
+      - Assignment Grading Process
+      - Grading Turnaround Time
+      - Alternative Feedback Format
+      - Lab Access Policy
+      - RCTC Core Outcomes
+      - Course-Specific Academic Integrity Notes
+      - Generative AI Policy
+      - Academic Integrity Statement
+      - Americans with Disabilities Act
+      - Military Friendly Statement
+      - Title IX Statement
+
+instructor_ref:
+  id: "brian-steele" # must match whatever you use in 02_instructor.yml
+  override_office_hours: [] # optional per-section tweaks

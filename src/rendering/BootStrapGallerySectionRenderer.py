@@ -32,7 +32,8 @@ class BootStrapGallerySectionRenderer(BootStrapSectionRenderer):
         if "- ![" not in self.content:
             return self.content
         else:
-            raw_figure_list = content.split("- ![]")
+            raw_figure_list = []
+            raw_figure_list.append(content)
             for raw_figure in raw_figure_list:
                 raw_figure = raw_figure.split("\n\n")
                 raw_figure = "".join(raw_figure[0])
@@ -71,5 +72,4 @@ class BootStrapGallerySectionRenderer(BootStrapSectionRenderer):
             content = content.replace(figure, new_figure_text, 1)
 
             count = count + 1
-            # print(count)
         return content

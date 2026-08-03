@@ -1,0 +1,232 @@
+---
+title: "ART 2280 - Important Dates, Spring 2026"
+course_id: "ART-2280-S26-31"
+source_of_truth: true
+term_ref: "S26"
+
+meeting_pattern:
+  days: ["Wednesday"]
+  time: "10:00 a.m. - 11:50 a.m."
+
+weekly_due_dates:
+  default_due_day: "Sunday"
+  default_due_time: "11:59 p.m."
+
+weeks:
+  - kind: weekly_summary
+    week: 1
+    topic: "Course Orientation; Lightroom Classic Workflow; What Is a Cohesive Body of Work?"
+    readings:
+      - title: "Ch. 1 — Before You Begin"
+    projects:
+      assigned:
+        - id: "final_project_body_of_work"
+          due_week: 16
+        - id: "printed_selfie"
+          due_week: 2
+    discussions:
+      - id: "week_1_discussion"
+        due_week: 1
+    exams: []
+
+  - kind: weekly_summary
+    week: 2
+    topic: "Metering, Exposure Review; File Management; First Work Prints"
+    readings:
+      - title: "Ch. 2 — Metering and Exposure"
+    projects:
+      assigned:
+        - id: "exposure_exercise"
+          due_week: 2
+    discussions:
+      - id: "week_2_discussion"
+        due_week: 2
+    exams: []
+
+  - kind: weekly_summary
+    week: 3
+    topic: "Framing and Contact Sheets; Editing as Selection"
+    readings:
+      - title: "Ch. 3 — Framing (Part 1)"
+    projects:
+      assigned:
+        - id: "contact_sheet_edit"
+          due_week: 3
+    discussions:
+      - id: "week_3_discussion"
+        due_week: 3
+    exams: []
+
+  - kind: weekly_summary
+    week: 4
+    topic: "Borders, Cropping, and the Edge of the Image"
+    readings:
+      - title: "Ch. 3 — Borders and Multiple Frames"
+    projects:
+      assigned:
+        - id: "framing_variation_project"
+          due_week: 4
+    discussions:
+      - id: "week_4_discussion"
+        due_week: 4
+    exams: []
+
+  - kind: weekly_summary
+    week: 5
+    topic: "Aperture, Focus, and Visual Clarity"
+    readings:
+      - title: "Ch. 4 — Apertures, Focus, and Lenses"
+    projects:
+      assigned:
+        - id: "focus_aperture_project"
+          due_week: 5
+    discussions:
+      - id: "week_5_discussion"
+        due_week: 5
+    exams: []
+
+  - kind: weekly_summary
+    week: 6
+    topic: "Shutter Speed, Motion, and Time"
+    readings:
+      - title: "Ch. 5 — Shutter Speeds (Part 1)"
+    projects:
+      assigned:
+        - id: "motion_time_project"
+          due_week: 6
+    discussions:
+      - id: "week_6_discussion"
+        due_week: 6
+    exams:
+      - id: "exam_1"
+        due_week: 6
+
+  - kind: weekly_summary
+    week: 7
+    topic: "Multiple Moments; Sequencing Time"
+    readings:
+      - title: "Ch. 5 — Multiple Moments in Time"
+    projects:
+      assigned:
+        - id: "sequence_exercise"
+          due_week: 7
+    discussions:
+      - id: "week_7_discussion"
+        due_week: 7
+    exams: []
+
+  - kind: weekly_summary
+    week: 8
+    topic: "Develop Module Deep Dive; Consistency and Tone"
+    readings:
+      - title: "Ch. 6 — Materials, Processes, and Presentation (Part 1)"
+    projects:
+      assigned:
+        - id: "develop_module_consistency_exercise"
+          due_week: 8
+    discussions:
+      - id: "week_8_discussion"
+        due_week: 8
+    exams: []
+
+  - kind: weekly_summary
+    week: 9
+    topic: "Image Scale; Paper Types; Why Print Choices Matter"
+    readings:
+      - title: "Ch. 6 — Image Size and Scale"
+    projects:
+      assigned:
+        - id: "paper_test_prints"
+          due_week: 9
+    discussions:
+      - id: "week_9_discussion"
+        due_week: 9
+    exams: []
+
+  - kind: weekly_summary
+    week: 10
+    topic: "Aggregate Image; Building Meaning Across Images"
+    readings:
+      - title: "Ch. 6 — The Aggregate Image"
+    projects:
+      assigned:
+        - id: "mini_sequence_prints"
+          due_week: 10
+    discussions:
+      - id: "week_10_discussion"
+        due_week: 10
+    exams: []
+
+  - kind: weekly_summary
+    week: 11
+    topic: "Presentation Contexts; Gallery Thinking"
+    readings:
+      - title: "Ch. 6 — Final Presentation in the Gallery"
+    projects:
+      assigned:
+        - id: "portfolio_direction_statement"
+          due_week: 11
+    discussions:
+      - id: "week_11_discussion"
+        due_week: 11
+    exams:
+      - id: "exam_2"
+        due_week: 11
+
+  - kind: weekly_summary
+    week: 12
+    topic: "Final Project Planning; Sequencing and Refinement"
+    readings:
+      - title: "Textbook Review and Synthesis"
+    projects:
+      assigned:
+        - id: "final_project_plan"
+          due_week: 12
+    discussions:
+      - id: "week_12_discussion"
+        due_week: 12
+    exams: []
+
+  - kind: weekly_summary
+    week: 13
+    topic: "Portfolio Printing I; Process to Commitment"
+    readings: []
+    projects:
+      assigned:
+        - id: "portfolio_printing_round_1"
+          due_week: 13
+    discussions: []
+    exams: []
+
+  - kind: weekly_summary
+    week: 14
+    topic: "Portfolio Printing II; Refinement and Reprints"
+    readings: []
+    projects:
+      assigned:
+        - id: "portfolio_printing_round_2"
+          due_week: 14
+    discussions: []
+    exams: []
+
+  - kind: weekly_summary
+    week: 15
+    topic: "Sequencing, Critique, and Final Adjustments"
+    readings: []
+    projects:
+      assigned:
+        - id: "final_portfolio_sequence"
+          due_week: 15
+    discussions: []
+    exams: []
+
+  - kind: weekly_summary
+    week: 16
+    topic: "Final Portfolio Submission and Critique"
+    readings: []
+    projects:
+      assigned:
+        - id: "final_portfolio_submission"
+          due_week: 16
+    discussions: []
+    exams: []

@@ -54,7 +54,6 @@ class Figure(ABCDocumentModel):
 
             text = "  -".join(text)
             text = "-" + text
-            # print("------------>", text)
         return text
 
     def set_renderer(self, renderer):

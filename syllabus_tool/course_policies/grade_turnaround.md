@@ -1,0 +1,2 @@
+- Quizzes should be set up to be graded immediately in D2L/Brightspace.
+- Projects that involve shooting images will take seven to ten days after the due date to grade.

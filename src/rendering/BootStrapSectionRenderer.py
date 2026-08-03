@@ -28,12 +28,14 @@ class BootStrapSectionRenderer(ABCRenderer):
         id = id.replace(" ", "_")
         id = id.lower()
         return_bootstrap += '<h2 id="' + id + '">' + self.title + "</h2>\n"
+        return_bootstrap += '<div class="m-4">\n'
         return_bootstrap += markdown.markdown(self.content, extensions=["tables"])
         return_bootstrap = self.format_indents(return_bootstrap)
 
         if "table" in return_bootstrap:
             return_bootstrap = self.make_tables_pretty(return_bootstrap)
 
+        return_bootstrap += "</div>\n"
         return return_bootstrap
 
     # In order to match VScode Prettier formatting,

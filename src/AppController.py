@@ -24,11 +24,11 @@ html_file_path = folder + "/" + html_filename
 
 # https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.geeksforgeeks.org/python-os-path-split-method/&ved=2ahUKEwirr8G7wJKGAxVghIkEHcIzCAYQFnoECBoQAQ&usg=AOvVaw1RrZFamTAalqfv1adkEIOh
 
-print(file_path)
-print(folder)
-print(markdown_filename)
-print(html_filename)
-print(html_file_path)
+# print(file_path)
+# print(folder)
+# print(markdown_filename)
+# print(html_filename)
+# print(html_file_path)
 
 with open(file_path, "r") as file:
     assignment_text = file.read()

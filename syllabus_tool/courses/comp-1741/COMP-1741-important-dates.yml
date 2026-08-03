@@ -1,0 +1,223 @@
+---
+title: "COMP 1741 - Important Dates, Spring 2026"
+course_id: "COMP-1741-S26-31"
+source_of_truth: true
+term_ref: "S26"
+
+meeting_pattern:
+  days: ["Online-Asynchronous"]
+  time: "Online-Asynchronous"
+
+weekly_due_dates:
+  default_due_day: "Sunday"
+  default_due_time: "11:59 a.m."
+
+weeks:
+  - kind: weekly_summary
+    week: 1
+    topic: "Introductions, Chrome, Visual Studio, LinkedIn Learning"
+    readings:
+      - title: "Syllabus, Chrome, LinkedIn Learning"
+    projects:
+      assigned:
+        - id: "getting_started"
+          due_week: 1
+    discussions:
+      - id: "discussion_1"
+        due_week: 1
+    exams: []
+  - kind: weekly_summary
+    week: 2
+    topic: "HTML"
+    readings:
+      - title: "HTML LinkedIn Learning Videos"
+    projects:
+      assigned:
+        - id: "html_videos"
+          due_week: 2
+        - id: "html_project"
+          due_week: 2
+    discussions:
+      - id: "discussion_2"
+        due_week: 2
+    exams: []
+  - kind: weekly_summary
+    week: 3
+    topic: "CSS"
+    readings:
+      - title: "CSS LinkedIn Learning Videos"
+    projects:
+      assigned:
+        - id: "css_videos"
+          due_week: 3
+        - id: "css_project"
+          due_week: 3
+    discussions:
+      - id: "discussion_3"
+        due_week: 3
+    exams: []
+  - kind: weekly_summary
+    week: 4
+    topic: "Intro to JavaScript"
+    readings:
+      - title: "Chapter 1"
+    projects:
+      assigned:
+        - id: "c1_problems"
+          due_week: 4
+    discussions:
+      - id: "discussion_4"
+        due_week: 4
+    exams: []
+  - kind: weekly_summary
+    week: 5
+    topic: "Functions, Data Types, and Operators"
+    readings:
+      - title: "Chapter 2"
+    projects:
+      assigned:
+        - id: "c2_problems"
+          due_week: 5
+    discussions:
+      - id: "discussion_5"
+        due_week: 5
+    exams: []
+  - kind: weekly_summary
+    week: 6
+    topic: "Arrays and Flow Control"
+    readings:
+      - title: "Chapter 3"
+    projects:
+      assigned:
+        - id: "c3_problems"
+          due_week: 6
+    discussions:
+      - id: "discussion_6"
+        due_week: 6
+    exams: []
+  - kind: weekly_summary
+    week: 7
+    topic: "Debugging and Error Handling"
+    readings:
+      - title: "Chapter 4"
+    projects:
+      assigned:
+        - id: "c4_problems"
+          due_week: 7
+    discussions:
+      - id: "discussion_7"
+        due_week: 7
+    exams:
+      - id: "exam_0"
+        due_week: 7
+  - kind: weekly_summary
+    week: 8
+    topic: "Mid-term Exam"
+    readings: []
+    projects:
+      assigned: []
+    discussions: []
+    exams:
+      - id: "exam_1"
+        due_week: 8
+  - kind: weekly_summary
+    week: 9
+    topic: "Web Apps and the DOM"
+    readings:
+      - title: "Chapter 5"
+    projects:
+      assigned:
+        - id: "c5_problems"
+          due_week: 9
+    discussions:
+      - id: "discussion_8"
+        due_week: 9
+    exams: []
+  - kind: weekly_summary
+    week: 10
+    topic: "Enhancing and Validating Forms"
+    readings:
+      - title: "Chapter 6"
+    projects:
+      assigned:
+        - id: "c6_problems"
+          due_week: 10
+    discussions:
+      - id: "discussion_9"
+        due_week: 10
+    exams: []
+  - kind: weekly_summary
+    week: 11
+    topic: "Manipulating Data in Strings, Arrays, and Other Objects"
+    readings:
+      - title: "Chapter 7"
+    projects:
+      assigned:
+        - id: "c7_problems"
+          due_week: 11
+    discussions:
+      - id: "discussion_10"
+        due_week: 11
+    exams: []
+  - kind: weekly_summary
+    week: 12
+    topic: "Objects, Properties, Methods"
+    readings:
+      - title: "Chapter 8"
+    projects:
+      assigned:
+        - id: "c8_problems"
+          due_week: 12
+    discussions:
+      - id: "discussion_11"
+        due_week: 12
+    exams: []
+  - kind: weekly_summary
+    week: 13
+    topic: "State Information and Security"
+    readings:
+      - title: "Chapter 9"
+    projects:
+      assigned:
+        - id: "c9_problems"
+          due_week: 13
+    discussions:
+      - id: "discussion_12"
+        due_week: 13
+    exams: []
+  - kind: weekly_summary
+    week: 14
+    topic: "Event Objects and APIs"
+    readings:
+      - title: "Chapter 10"
+    projects:
+      assigned:
+        - id: "c10_problems"
+          due_week: 14
+    discussions:
+      - id: "discussion_13"
+        due_week: 14
+    exams: []
+  - kind: weekly_summary
+    week: 15
+    topic: "AJAX and Fetch"
+    readings:
+      - title: "Chapter 11"
+    projects:
+      assigned:
+        - id: "c11_problems"
+          due_week: 15
+    discussions:
+      - id: "discussion_14"
+        due_week: 15
+    exams: []
+  - kind: weekly_summary
+    week: 16
+    topic: "Final Exam"
+    readings: []
+    projects:
+      assigned: []
+    discussions: []
+    exams:
+      - id: "exam_2"
+        due_week: 16

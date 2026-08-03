@@ -1,0 +1,16 @@
+semester: spring
+year: 2026
+dept: ART
+course_number: 1184
+course_title: Photography I
+start_date: 2026-01-17
+end_date: 2026-02-20
+important_dates:
+  - week: 1
+    title: Intro
+  - week: 2
+    title: Light Meters
+  - week: 3
+    title: Printing
+  - week: 4
+    title: Final Project

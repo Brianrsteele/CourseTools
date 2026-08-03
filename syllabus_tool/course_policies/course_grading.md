@@ -1,0 +1,3 @@
+- Student learning is assessed through photographic projects, exercises, quizzes, written reflections, and participation in critiques and discussions.
+- Most assignments will have a grading rubric available either in the assignment description or in the assignment drop box for submission.
+- The course does not have a signature assessment.

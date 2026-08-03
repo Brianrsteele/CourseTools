@@ -1,0 +1,5 @@
+- **Students in online courses are welcome to use the Mac labs on campus to complete their work**.
+- Please do not interrupt an instructor during a lecture or critique.
+- Try to use a computer in the back of the lab.
+- The instructor has the right to say, “No, not right now” and you must respect that.
+- Instructors who are giving demonstrations in the print room or the lighting studio have priority and may ask you to leave the lab.

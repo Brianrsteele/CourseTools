@@ -1,0 +1,1 @@
+Yes. Completing projects requires substantial work beyond reading and watching the materials in the weekly D2L/Brightspace modules.
